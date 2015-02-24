@@ -25,3 +25,15 @@ C:\Users\CA123\Downloads\WorksOnSchoolMachines\WorksOnSchoolMachines\WorksOnScho
 C:\Users\KthProg\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe.config
 C:\Users\KthProg\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.exe
 C:\Users\KthProg\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.pdb
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe.config
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.exe
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.pdb
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.pdb
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csprojResolveAssemblyReference.cache
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Form1.resources
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.horseCare.resources
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newLesson.resources
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newRider.resources
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Properties.Resources.resources
+C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
