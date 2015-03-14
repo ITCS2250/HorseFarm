@@ -72,6 +72,11 @@
             this.btnLesson = new System.Windows.Forms.Button();
             this.customersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSetTableAdapters.CustomersTableAdapter();
             this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSetTableAdapters.DependentsTableAdapter();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
@@ -82,6 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -252,7 +259,7 @@
             // 
             // BtnClient
             // 
-            this.BtnClient.Location = new System.Drawing.Point(25, 310);
+            this.BtnClient.Location = new System.Drawing.Point(57, 312);
             this.BtnClient.Name = "BtnClient";
             this.BtnClient.Size = new System.Drawing.Size(75, 23);
             this.BtnClient.TabIndex = 7;
@@ -288,7 +295,7 @@
             // 
             // btnHorse
             // 
-            this.btnHorse.Location = new System.Drawing.Point(291, 310);
+            this.btnHorse.Location = new System.Drawing.Point(111, 19);
             this.btnHorse.Name = "btnHorse";
             this.btnHorse.Size = new System.Drawing.Size(75, 23);
             this.btnHorse.TabIndex = 9;
@@ -383,7 +390,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(972, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(873, 25);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -474,7 +481,7 @@
             // 
             // btnLesson
             // 
-            this.btnLesson.Location = new System.Drawing.Point(160, 310);
+            this.btnLesson.Location = new System.Drawing.Point(17, 19);
             this.btnLesson.Name = "btnLesson";
             this.btnLesson.Size = new System.Drawing.Size(75, 23);
             this.btnLesson.TabIndex = 8;
@@ -490,16 +497,66 @@
             // 
             this.dependentsTableAdapter.ClearBeforeFill = true;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnLesson);
+            this.groupBox5.Controls.Add(this.btnHorse);
+            this.groupBox5.Location = new System.Drawing.Point(167, 293);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(207, 57);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Add to schedule";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button3);
+            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.button1);
+            this.groupBox6.Location = new System.Drawing.Point(467, 293);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(316, 57);
+            this.groupBox6.TabIndex = 11;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "View Calendars";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(18, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Lessons";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(111, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Horse Care";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(214, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "All";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 374);
+            this.ClientSize = new System.Drawing.Size(873, 374);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.BtnClient);
-            this.Controls.Add(this.btnHorse);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.btnLesson);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -517,6 +574,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,6 +625,11 @@
         private HorseFarmDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.BindingSource dependentsBindingSource;
         private HorseFarmDataSetTableAdapters.DependentsTableAdapter dependentsTableAdapter;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

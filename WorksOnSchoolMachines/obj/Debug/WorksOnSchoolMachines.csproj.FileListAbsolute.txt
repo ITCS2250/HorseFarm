@@ -37,3 +37,6 @@ C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksO
 C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newRider.resources
 C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Properties.Resources.resources
 C:\Users\CA123\Documents\GitHub\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe.config
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.exe
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.pdb
