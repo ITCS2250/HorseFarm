@@ -56,10 +56,10 @@
     <Compile Include="horseCare.Designer.cs">
       <DependentUpon>horseCare.cs</DependentUpon>
     </Compile>
-    <Compile Include="HorseFarmDataSet.Designer.cs">
+    <Compile Include="HorseFarmDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
+      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="newLesson.cs">
       <SubType>Form</SubType>
@@ -96,16 +96,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="HorseFarmDataSet.xsc">
-      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
+    <None Include="HorseFarmDataSet1.xsc">
+      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="HorseFarmDataSet.xsd">
+    <None Include="HorseFarmDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HorseFarmDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>HorseFarmDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="HorseFarmDataSet.xss">
-      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
+    <None Include="HorseFarmDataSet1.xss">
+      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -47,15 +47,11 @@
             this.radDisplayLessons = new System.Windows.Forms.RadioButton();
             this.BtnClient = new System.Windows.Forms.Button();
             this.cboFindByClientName = new System.Windows.Forms.ComboBox();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet = new WorksOnSchoolMachines.HorseFarmDataSet();
             this.btnHorse = new System.Windows.Forms.Button();
             this.cboFindByHorseName = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cboFindByStudentName = new System.Windows.Forms.ComboBox();
-            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.radFindByStudentName = new System.Windows.Forms.RadioButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -70,25 +66,34 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnLesson = new System.Windows.Forms.Button();
-            this.customersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSetTableAdapters.CustomersTableAdapter();
-            this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSetTableAdapters.DependentsTableAdapter();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.horseFarmDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.horsesTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
+            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
+            this.vCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vCustomersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -269,29 +274,14 @@
             // 
             // cboFindByClientName
             // 
-            this.cboFindByClientName.DataSource = this.customersBindingSource;
-            this.cboFindByClientName.DisplayMember = "FirstName";
+            this.cboFindByClientName.DataSource = this.vCustomersBindingSource;
+            this.cboFindByClientName.DisplayMember = "FullName";
             this.cboFindByClientName.FormattingEnabled = true;
             this.cboFindByClientName.Location = new System.Drawing.Point(6, 42);
             this.cboFindByClientName.Name = "cboFindByClientName";
             this.cboFindByClientName.Size = new System.Drawing.Size(121, 21);
             this.cboFindByClientName.TabIndex = 0;
             this.cboFindByClientName.ValueMember = "CustomerID";
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.bindingSource1;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.horseFarmDataSet;
-            this.bindingSource1.Position = 0;
-            // 
-            // horseFarmDataSet
-            // 
-            this.horseFarmDataSet.DataSetName = "HorseFarmDataSet";
-            this.horseFarmDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnHorse
             // 
@@ -305,6 +295,8 @@
             // 
             // cboFindByHorseName
             // 
+            this.cboFindByHorseName.DataSource = this.horsesBindingSource;
+            this.cboFindByHorseName.DisplayMember = "HorseName";
             this.cboFindByHorseName.FormattingEnabled = true;
             this.cboFindByHorseName.Location = new System.Drawing.Point(6, 160);
             this.cboFindByHorseName.Name = "cboFindByHorseName";
@@ -349,11 +341,6 @@
             this.cboFindByStudentName.Size = new System.Drawing.Size(121, 21);
             this.cboFindByStudentName.TabIndex = 0;
             // 
-            // dependentsBindingSource
-            // 
-            this.dependentsBindingSource.DataMember = "Dependents";
-            this.dependentsBindingSource.DataSource = this.bindingSource1;
-            // 
             // radFindByStudentName
             // 
             this.radFindByStudentName.AutoSize = true;
@@ -368,7 +355,6 @@
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.bindingSource1;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -448,7 +434,7 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "1";
+            this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
@@ -489,14 +475,6 @@
             this.btnLesson.UseVisualStyleBackColor = true;
             this.btnLesson.Click += new System.EventHandler(this.btnLesson_Click);
             // 
-            // customersTableAdapter
-            // 
-            this.customersTableAdapter.ClearBeforeFill = true;
-            // 
-            // dependentsTableAdapter
-            // 
-            this.dependentsTableAdapter.ClearBeforeFill = true;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.btnLesson);
@@ -520,14 +498,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "View Calendars";
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(18, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Lessons";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(214, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "All";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -538,14 +516,56 @@
             this.button2.Text = "Horse Care";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(214, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "All";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(18, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Lessons";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = this.horseFarmDataSet1;
+            this.bindingSource1.Position = 0;
+            // 
+            // horseFarmDataSet1
+            // 
+            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
+            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // horseFarmDataSet1BindingSource
+            // 
+            this.horseFarmDataSet1BindingSource.DataSource = this.horseFarmDataSet1;
+            this.horseFarmDataSet1BindingSource.Position = 0;
+            // 
+            // horsesBindingSource
+            // 
+            this.horsesBindingSource.DataMember = "Horses";
+            this.horsesBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
+            // 
+            // horsesTableAdapter
+            // 
+            this.horsesTableAdapter.ClearBeforeFill = true;
+            // 
+            // dependentsBindingSource
+            // 
+            this.dependentsBindingSource.DataMember = "Dependents";
+            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
+            // 
+            // dependentsTableAdapter
+            // 
+            this.dependentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // vCustomersBindingSource
+            // 
+            this.vCustomersBindingSource.DataMember = "vCustomers";
+            this.vCustomersBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
+            // 
+            // vCustomersTableAdapter
+            // 
+            this.vCustomersTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -564,18 +584,20 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -619,17 +641,20 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.Button btnLesson;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private HorseFarmDataSet horseFarmDataSet;
-        private System.Windows.Forms.BindingSource customersBindingSource;
-        private HorseFarmDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-        private System.Windows.Forms.BindingSource dependentsBindingSource;
-        private HorseFarmDataSetTableAdapters.DependentsTableAdapter dependentsTableAdapter;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource horseFarmDataSet1BindingSource;
+        private HorseFarmDataSet1 horseFarmDataSet1;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource horsesBindingSource;
+        private HorseFarmDataSet1TableAdapters.HorsesTableAdapter horsesTableAdapter;
+        private System.Windows.Forms.BindingSource dependentsBindingSource;
+        private HorseFarmDataSet1TableAdapters.DependentsTableAdapter dependentsTableAdapter;
+        private System.Windows.Forms.BindingSource vCustomersBindingSource;
+        private HorseFarmDataSet1TableAdapters.vCustomersTableAdapter vCustomersTableAdapter;
     }
 }
 
