@@ -38,7 +38,7 @@ namespace WorksOnSchoolMachines
         {
             SqlConnection conn = Program.ConnectToDB();
             SqlCommand cmd = new SqlCommand("pAddNewRider", conn);
-            cmd.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = textBox2.Text;
+            cmd.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = txtNewStudentFirstName.Text;
             // add parameterized query, using control values (rename)
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.ExecuteNonQuery();

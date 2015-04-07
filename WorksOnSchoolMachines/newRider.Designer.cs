@@ -37,34 +37,39 @@
             System.Windows.Forms.Label campLabel;
             System.Windows.Forms.Label hSCHLLabel;
             System.Windows.Forms.Label argPerDayLabel;
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.horseTextBox = new System.Windows.Forms.TextBox();
-            this.schoolTextBox = new System.Windows.Forms.TextBox();
-            this.showsTextBox = new System.Windows.Forms.TextBox();
-            this.hackTextBox = new System.Windows.Forms.TextBox();
-            this.campTextBox = new System.Windows.Forms.TextBox();
-            this.hSCHLTextBox = new System.Windows.Forms.TextBox();
-            this.argPerDayTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtHomePhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtNewRiderAddress = new System.Windows.Forms.TextBox();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.txtNewStudentHorse = new System.Windows.Forms.TextBox();
+            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtNewStudentSchool = new System.Windows.Forms.TextBox();
+            this.txtNewStudentShows = new System.Windows.Forms.TextBox();
+            this.txtNewStudentHack = new System.Windows.Forms.TextBox();
+            this.txtNewStudentCamp = new System.Windows.Forms.TextBox();
+            this.txtNewStudentHSCHL = new System.Windows.Forms.TextBox();
+            this.txtNewStudentArgPerDay = new System.Windows.Forms.TextBox();
+            this.txtNewStudentLastName = new System.Windows.Forms.TextBox();
+            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtNewStudentFirstName = new System.Windows.Forms.TextBox();
+            this.txtNewRiderHomePhone = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtZIP = new System.Windows.Forms.MaskedTextBox();
+            this.txtNewRiderZip = new System.Windows.Forms.MaskedTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtNewRiderEmail = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtMobilePhone = new System.Windows.Forms.MaskedTextBox();
-            this.txtWorkPhone = new System.Windows.Forms.MaskedTextBox();
-            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtNewRiderMobilePhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtNewRiderWorkPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtNewRiderCity = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtNewRiderClientLastName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateTimeArrived = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtNewRiderClientFirstName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cboState = new System.Windows.Forms.ComboBox();
+            this.txtNewRiderState = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,16 +78,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cboTitle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnNewRiderSubmit = new System.Windows.Forms.Button();
             this.customersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.CustomersTableAdapter();
-            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.horsesTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             horseLabel = new System.Windows.Forms.Label();
             arrivedLabel = new System.Windows.Forms.Label();
             schoolLabel = new System.Windows.Forms.Label();
@@ -91,12 +91,12 @@
             campLabel = new System.Windows.Forms.Label();
             hSCHLLabel = new System.Windows.Forms.Label();
             argPerDayLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // horseLabel
@@ -171,88 +171,108 @@
             argPerDayLabel.TabIndex = 56;
             argPerDayLabel.Text = "Arg Per Day:";
             // 
-            // txtAddress
+            // txtNewRiderAddress
             // 
-            this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
-            this.txtAddress.Location = new System.Drawing.Point(76, 122);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(183, 20);
-            this.txtAddress.TabIndex = 31;
+            this.txtNewRiderAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
+            this.txtNewRiderAddress.Location = new System.Drawing.Point(76, 122);
+            this.txtNewRiderAddress.Name = "txtNewRiderAddress";
+            this.txtNewRiderAddress.Size = new System.Drawing.Size(183, 20);
+            this.txtNewRiderAddress.TabIndex = 31;
             // 
-            // horseTextBox
+            // customersBindingSource
             // 
-            this.horseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horsesBindingSource, "HorseName", true));
-            this.horseTextBox.Location = new System.Drawing.Point(76, 81);
-            this.horseTextBox.Name = "horseTextBox";
-            this.horseTextBox.Size = new System.Drawing.Size(100, 20);
-            this.horseTextBox.TabIndex = 43;
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.horseFarmDataSet1;
             // 
-            // schoolTextBox
+            // horseFarmDataSet1
             // 
-            this.schoolTextBox.Location = new System.Drawing.Point(76, 133);
-            this.schoolTextBox.Name = "schoolTextBox";
-            this.schoolTextBox.Size = new System.Drawing.Size(100, 20);
-            this.schoolTextBox.TabIndex = 47;
+            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
+            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // showsTextBox
+            // txtNewStudentHorse
             // 
-            this.showsTextBox.Location = new System.Drawing.Point(76, 159);
-            this.showsTextBox.Name = "showsTextBox";
-            this.showsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.showsTextBox.TabIndex = 49;
+            this.txtNewStudentHorse.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horsesBindingSource, "HorseName", true));
+            this.txtNewStudentHorse.Location = new System.Drawing.Point(76, 81);
+            this.txtNewStudentHorse.Name = "txtNewStudentHorse";
+            this.txtNewStudentHorse.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentHorse.TabIndex = 43;
             // 
-            // hackTextBox
+            // horsesBindingSource
             // 
-            this.hackTextBox.Location = new System.Drawing.Point(76, 185);
-            this.hackTextBox.Name = "hackTextBox";
-            this.hackTextBox.Size = new System.Drawing.Size(100, 20);
-            this.hackTextBox.TabIndex = 51;
+            this.horsesBindingSource.DataMember = "Horses";
+            this.horsesBindingSource.DataSource = this.horseFarmDataSet1;
             // 
-            // campTextBox
+            // txtNewStudentSchool
             // 
-            this.campTextBox.Location = new System.Drawing.Point(271, 130);
-            this.campTextBox.Name = "campTextBox";
-            this.campTextBox.Size = new System.Drawing.Size(100, 20);
-            this.campTextBox.TabIndex = 53;
+            this.txtNewStudentSchool.Location = new System.Drawing.Point(76, 133);
+            this.txtNewStudentSchool.Name = "txtNewStudentSchool";
+            this.txtNewStudentSchool.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentSchool.TabIndex = 47;
             // 
-            // hSCHLTextBox
+            // txtNewStudentShows
             // 
-            this.hSCHLTextBox.Location = new System.Drawing.Point(271, 156);
-            this.hSCHLTextBox.Name = "hSCHLTextBox";
-            this.hSCHLTextBox.Size = new System.Drawing.Size(100, 20);
-            this.hSCHLTextBox.TabIndex = 55;
+            this.txtNewStudentShows.Location = new System.Drawing.Point(76, 159);
+            this.txtNewStudentShows.Name = "txtNewStudentShows";
+            this.txtNewStudentShows.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentShows.TabIndex = 49;
             // 
-            // argPerDayTextBox
+            // txtNewStudentHack
             // 
-            this.argPerDayTextBox.Location = new System.Drawing.Point(271, 182);
-            this.argPerDayTextBox.Name = "argPerDayTextBox";
-            this.argPerDayTextBox.Size = new System.Drawing.Size(100, 20);
-            this.argPerDayTextBox.TabIndex = 57;
+            this.txtNewStudentHack.Location = new System.Drawing.Point(76, 185);
+            this.txtNewStudentHack.Name = "txtNewStudentHack";
+            this.txtNewStudentHack.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentHack.TabIndex = 51;
             // 
-            // textBox1
+            // txtNewStudentCamp
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "LastName", true));
-            this.textBox1.Location = new System.Drawing.Point(76, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 33;
+            this.txtNewStudentCamp.Location = new System.Drawing.Point(271, 130);
+            this.txtNewStudentCamp.Name = "txtNewStudentCamp";
+            this.txtNewStudentCamp.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentCamp.TabIndex = 53;
             // 
-            // textBox2
+            // txtNewStudentHSCHL
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "FirstName", true));
-            this.textBox2.Location = new System.Drawing.Point(76, 26);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 32;
+            this.txtNewStudentHSCHL.Location = new System.Drawing.Point(271, 156);
+            this.txtNewStudentHSCHL.Name = "txtNewStudentHSCHL";
+            this.txtNewStudentHSCHL.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentHSCHL.TabIndex = 55;
             // 
-            // txtHomePhone
+            // txtNewStudentArgPerDay
             // 
-            this.txtHomePhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "HomePhone", true));
-            this.txtHomePhone.Location = new System.Drawing.Point(382, 24);
-            this.txtHomePhone.Mask = "(999) 000-0000";
-            this.txtHomePhone.Name = "txtHomePhone";
-            this.txtHomePhone.Size = new System.Drawing.Size(100, 20);
-            this.txtHomePhone.TabIndex = 38;
+            this.txtNewStudentArgPerDay.Location = new System.Drawing.Point(271, 182);
+            this.txtNewStudentArgPerDay.Name = "txtNewStudentArgPerDay";
+            this.txtNewStudentArgPerDay.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentArgPerDay.TabIndex = 57;
+            // 
+            // txtNewStudentLastName
+            // 
+            this.txtNewStudentLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "LastName", true));
+            this.txtNewStudentLastName.Location = new System.Drawing.Point(76, 51);
+            this.txtNewStudentLastName.Name = "txtNewStudentLastName";
+            this.txtNewStudentLastName.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentLastName.TabIndex = 33;
+            // 
+            // dependentsBindingSource
+            // 
+            this.dependentsBindingSource.DataMember = "Dependents";
+            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1;
+            // 
+            // txtNewStudentFirstName
+            // 
+            this.txtNewStudentFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "FirstName", true));
+            this.txtNewStudentFirstName.Location = new System.Drawing.Point(76, 26);
+            this.txtNewStudentFirstName.Name = "txtNewStudentFirstName";
+            this.txtNewStudentFirstName.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStudentFirstName.TabIndex = 32;
+            // 
+            // txtNewRiderHomePhone
+            // 
+            this.txtNewRiderHomePhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "HomePhone", true));
+            this.txtNewRiderHomePhone.Location = new System.Drawing.Point(382, 24);
+            this.txtNewRiderHomePhone.Mask = "(999) 000-0000";
+            this.txtNewRiderHomePhone.Name = "txtNewRiderHomePhone";
+            this.txtNewRiderHomePhone.Size = new System.Drawing.Size(100, 20);
+            this.txtNewRiderHomePhone.TabIndex = 38;
             // 
             // label11
             // 
@@ -281,14 +301,14 @@
             this.label9.TabIndex = 33;
             this.label9.Text = "Home Phone";
             // 
-            // txtZIP
+            // txtNewRiderZip
             // 
-            this.txtZIP.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ZIP", true));
-            this.txtZIP.Location = new System.Drawing.Point(76, 198);
-            this.txtZIP.Mask = "00000-9999";
-            this.txtZIP.Name = "txtZIP";
-            this.txtZIP.Size = new System.Drawing.Size(83, 20);
-            this.txtZIP.TabIndex = 32;
+            this.txtNewRiderZip.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ZIP", true));
+            this.txtNewRiderZip.Location = new System.Drawing.Point(76, 198);
+            this.txtNewRiderZip.Mask = "00000-9999";
+            this.txtNewRiderZip.Name = "txtNewRiderZip";
+            this.txtNewRiderZip.Size = new System.Drawing.Size(83, 20);
+            this.txtNewRiderZip.TabIndex = 32;
             // 
             // label13
             // 
@@ -299,13 +319,13 @@
             this.label13.TabIndex = 31;
             this.label13.Text = "First Name";
             // 
-            // txtEmail
+            // txtNewRiderEmail
             // 
-            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Email", true));
-            this.txtEmail.Location = new System.Drawing.Point(382, 97);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(183, 20);
-            this.txtEmail.TabIndex = 40;
+            this.txtNewRiderEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Email", true));
+            this.txtNewRiderEmail.Location = new System.Drawing.Point(382, 97);
+            this.txtNewRiderEmail.Name = "txtNewRiderEmail";
+            this.txtNewRiderEmail.Size = new System.Drawing.Size(183, 20);
+            this.txtNewRiderEmail.TabIndex = 40;
             // 
             // label12
             // 
@@ -316,30 +336,30 @@
             this.label12.TabIndex = 39;
             this.label12.Text = "Email";
             // 
-            // txtMobilePhone
+            // txtNewRiderMobilePhone
             // 
-            this.txtMobilePhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "MobilePhone", true));
-            this.txtMobilePhone.Location = new System.Drawing.Point(382, 76);
-            this.txtMobilePhone.Mask = "(999) 000-0000";
-            this.txtMobilePhone.Name = "txtMobilePhone";
-            this.txtMobilePhone.Size = new System.Drawing.Size(100, 20);
-            this.txtMobilePhone.TabIndex = 36;
+            this.txtNewRiderMobilePhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "MobilePhone", true));
+            this.txtNewRiderMobilePhone.Location = new System.Drawing.Point(382, 76);
+            this.txtNewRiderMobilePhone.Mask = "(999) 000-0000";
+            this.txtNewRiderMobilePhone.Name = "txtNewRiderMobilePhone";
+            this.txtNewRiderMobilePhone.Size = new System.Drawing.Size(100, 20);
+            this.txtNewRiderMobilePhone.TabIndex = 36;
             // 
-            // txtWorkPhone
+            // txtNewRiderWorkPhone
             // 
-            this.txtWorkPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "WorkPhone", true));
-            this.txtWorkPhone.Location = new System.Drawing.Point(382, 50);
-            this.txtWorkPhone.Mask = "(999) 000-0000";
-            this.txtWorkPhone.Name = "txtWorkPhone";
-            this.txtWorkPhone.Size = new System.Drawing.Size(100, 20);
-            this.txtWorkPhone.TabIndex = 37;
+            this.txtNewRiderWorkPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "WorkPhone", true));
+            this.txtNewRiderWorkPhone.Location = new System.Drawing.Point(382, 50);
+            this.txtNewRiderWorkPhone.Mask = "(999) 000-0000";
+            this.txtNewRiderWorkPhone.Name = "txtNewRiderWorkPhone";
+            this.txtNewRiderWorkPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtNewRiderWorkPhone.TabIndex = 37;
             // 
-            // txtCity
+            // txtNewRiderCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(76, 147);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(127, 20);
-            this.txtCity.TabIndex = 30;
+            this.txtNewRiderCity.Location = new System.Drawing.Point(76, 147);
+            this.txtNewRiderCity.Name = "txtNewRiderCity";
+            this.txtNewRiderCity.Size = new System.Drawing.Size(127, 20);
+            this.txtNewRiderCity.TabIndex = 30;
             // 
             // label14
             // 
@@ -350,34 +370,34 @@
             this.label14.TabIndex = 30;
             this.label14.Text = "Last Name";
             // 
-            // txtLastName
+            // txtNewRiderClientLastName
             // 
-            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "LastName", true));
-            this.txtLastName.Location = new System.Drawing.Point(76, 97);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(100, 20);
-            this.txtLastName.TabIndex = 29;
+            this.txtNewRiderClientLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "LastName", true));
+            this.txtNewRiderClientLastName.Location = new System.Drawing.Point(76, 97);
+            this.txtNewRiderClientLastName.Name = "txtNewRiderClientLastName";
+            this.txtNewRiderClientLastName.Size = new System.Drawing.Size(100, 20);
+            this.txtNewRiderClientLastName.TabIndex = 29;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dateTimeArrived);
             this.groupBox2.Controls.Add(horseLabel);
-            this.groupBox2.Controls.Add(this.horseTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentHorse);
             this.groupBox2.Controls.Add(arrivedLabel);
             this.groupBox2.Controls.Add(schoolLabel);
-            this.groupBox2.Controls.Add(this.schoolTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentSchool);
             this.groupBox2.Controls.Add(showsLabel);
-            this.groupBox2.Controls.Add(this.showsTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentShows);
             this.groupBox2.Controls.Add(hackLabel);
-            this.groupBox2.Controls.Add(this.hackTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentHack);
             this.groupBox2.Controls.Add(campLabel);
-            this.groupBox2.Controls.Add(this.campTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentCamp);
             this.groupBox2.Controls.Add(hSCHLLabel);
-            this.groupBox2.Controls.Add(this.hSCHLTextBox);
+            this.groupBox2.Controls.Add(this.txtNewStudentHSCHL);
             this.groupBox2.Controls.Add(argPerDayLabel);
-            this.groupBox2.Controls.Add(this.argPerDayTextBox);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtNewStudentArgPerDay);
+            this.groupBox2.Controls.Add(this.txtNewStudentLastName);
+            this.groupBox2.Controls.Add(this.txtNewStudentFirstName);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Location = new System.Drawing.Point(12, 268);
@@ -387,23 +407,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
             // 
+            // dateTimeArrived
+            // 
+            this.dateTimeArrived.Location = new System.Drawing.Point(76, 107);
+            this.dateTimeArrived.Name = "dateTimeArrived";
+            this.dateTimeArrived.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeArrived.TabIndex = 58;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtNewRiderEmail);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.txtMobilePhone);
-            this.groupBox1.Controls.Add(this.txtWorkPhone);
-            this.groupBox1.Controls.Add(this.txtHomePhone);
+            this.groupBox1.Controls.Add(this.txtNewRiderMobilePhone);
+            this.groupBox1.Controls.Add(this.txtNewRiderWorkPhone);
+            this.groupBox1.Controls.Add(this.txtNewRiderHomePhone);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtZIP);
-            this.groupBox1.Controls.Add(this.txtCity);
-            this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.txtLastName);
-            this.groupBox1.Controls.Add(this.txtFirstName);
+            this.groupBox1.Controls.Add(this.txtNewRiderZip);
+            this.groupBox1.Controls.Add(this.txtNewRiderCity);
+            this.groupBox1.Controls.Add(this.txtNewRiderAddress);
+            this.groupBox1.Controls.Add(this.txtNewRiderClientLastName);
+            this.groupBox1.Controls.Add(this.txtNewRiderClientFirstName);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.cboState);
+            this.groupBox1.Controls.Add(this.txtNewRiderState);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -419,13 +446,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client Contact Information";
             // 
-            // txtFirstName
+            // txtNewRiderClientFirstName
             // 
-            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "FirstName", true));
-            this.txtFirstName.Location = new System.Drawing.Point(76, 72);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(100, 20);
-            this.txtFirstName.TabIndex = 28;
+            this.txtNewRiderClientFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "FirstName", true));
+            this.txtNewRiderClientFirstName.Location = new System.Drawing.Point(76, 72);
+            this.txtNewRiderClientFirstName.Name = "txtNewRiderClientFirstName";
+            this.txtNewRiderClientFirstName.Size = new System.Drawing.Size(100, 20);
+            this.txtNewRiderClientFirstName.TabIndex = 28;
             // 
             // label8
             // 
@@ -436,12 +463,12 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "ZIP Code";
             // 
-            // cboState
+            // txtNewRiderState
             // 
-            this.cboState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "State", true));
-            this.cboState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboState.FormattingEnabled = true;
-            this.cboState.Items.AddRange(new object[] {
+            this.txtNewRiderState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "State", true));
+            this.txtNewRiderState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtNewRiderState.FormattingEnabled = true;
+            this.txtNewRiderState.Items.AddRange(new object[] {
             "AK",
             "AL",
             "AR",
@@ -493,11 +520,11 @@
             "WI",
             "WV",
             "WY"});
-            this.cboState.Location = new System.Drawing.Point(76, 172);
-            this.cboState.Name = "cboState";
-            this.cboState.Size = new System.Drawing.Size(53, 21);
-            this.cboState.Sorted = true;
-            this.cboState.TabIndex = 26;
+            this.txtNewRiderState.Location = new System.Drawing.Point(76, 172);
+            this.txtNewRiderState.Name = "txtNewRiderState";
+            this.txtNewRiderState.Size = new System.Drawing.Size(53, 21);
+            this.txtNewRiderState.Sorted = true;
+            this.txtNewRiderState.TabIndex = 26;
             // 
             // label7
             // 
@@ -576,64 +603,37 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Title";
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Location = new System.Drawing.Point(532, 466);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancel.Location = new System.Drawing.Point(532, 466);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnNewRiderSubmit
             // 
-            this.button1.Location = new System.Drawing.Point(434, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // horseFarmDataSet1
-            // 
-            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
-            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.horseFarmDataSet1;
+            this.btnNewRiderSubmit.Location = new System.Drawing.Point(434, 466);
+            this.btnNewRiderSubmit.Name = "btnNewRiderSubmit";
+            this.btnNewRiderSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnNewRiderSubmit.TabIndex = 9;
+            this.btnNewRiderSubmit.Text = "Submit";
+            this.btnNewRiderSubmit.UseVisualStyleBackColor = true;
+            this.btnNewRiderSubmit.Click += new System.EventHandler(this.button1_Click);
             // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
             // 
-            // dependentsBindingSource
-            // 
-            this.dependentsBindingSource.DataMember = "Dependents";
-            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
             // dependentsTableAdapter
             // 
             this.dependentsTableAdapter.ClearBeforeFill = true;
             // 
-            // horsesBindingSource
-            // 
-            this.horsesBindingSource.DataMember = "Horses";
-            this.horsesBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
             // horsesTableAdapter
             // 
             this.horsesTableAdapter.ClearBeforeFill = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(76, 107);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 58;
             // 
             // newRider
             // 
@@ -642,53 +642,53 @@
             this.ClientSize = new System.Drawing.Size(655, 506);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnNewRiderSubmit);
             this.Name = "newRider";
-            this.Text = "newRider";
+            this.Text = "New Rider";
             this.Load += new System.EventHandler(this.newRider_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox horseTextBox;
-        private System.Windows.Forms.TextBox schoolTextBox;
-        private System.Windows.Forms.TextBox showsTextBox;
-        private System.Windows.Forms.TextBox hackTextBox;
-        private System.Windows.Forms.TextBox campTextBox;
-        private System.Windows.Forms.TextBox hSCHLTextBox;
-        private System.Windows.Forms.TextBox argPerDayTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox txtHomePhone;
+        private System.Windows.Forms.TextBox txtNewRiderAddress;
+        private System.Windows.Forms.TextBox txtNewStudentHorse;
+        private System.Windows.Forms.TextBox txtNewStudentSchool;
+        private System.Windows.Forms.TextBox txtNewStudentShows;
+        private System.Windows.Forms.TextBox txtNewStudentHack;
+        private System.Windows.Forms.TextBox txtNewStudentCamp;
+        private System.Windows.Forms.TextBox txtNewStudentHSCHL;
+        private System.Windows.Forms.TextBox txtNewStudentArgPerDay;
+        private System.Windows.Forms.TextBox txtNewStudentLastName;
+        private System.Windows.Forms.TextBox txtNewStudentFirstName;
+        private System.Windows.Forms.MaskedTextBox txtNewRiderHomePhone;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MaskedTextBox txtZIP;
+        private System.Windows.Forms.MaskedTextBox txtNewRiderZip;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtNewRiderEmail;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.MaskedTextBox txtMobilePhone;
-        private System.Windows.Forms.MaskedTextBox txtWorkPhone;
-        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.MaskedTextBox txtNewRiderMobilePhone;
+        private System.Windows.Forms.MaskedTextBox txtNewRiderWorkPhone;
+        private System.Windows.Forms.TextBox txtNewRiderCity;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtNewRiderClientLastName;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtNewRiderClientFirstName;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cboState;
+        private System.Windows.Forms.ComboBox txtNewRiderState;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -697,8 +697,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboTitle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnNewRiderSubmit;
         private HorseFarmDataSet1 horseFarmDataSet1;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private HorseFarmDataSet1TableAdapters.CustomersTableAdapter customersTableAdapter;
@@ -706,6 +706,6 @@
         private HorseFarmDataSet1TableAdapters.DependentsTableAdapter dependentsTableAdapter;
         private System.Windows.Forms.BindingSource horsesBindingSource;
         private HorseFarmDataSet1TableAdapters.HorsesTableAdapter horsesTableAdapter;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimeArrived;
     }
 }

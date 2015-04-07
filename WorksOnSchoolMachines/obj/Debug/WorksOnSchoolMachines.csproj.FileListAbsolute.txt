@@ -52,3 +52,11 @@ C:\Users\CA123\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMach
 C:\Users\CA123\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newRider.resources
 C:\Users\CA123\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Properties.Resources.resources
 C:\Users\CA123\Documents\Visual Studio 2012\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Form1.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.horseCare.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newLesson.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.newRider.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.Properties.Resources.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.pdb

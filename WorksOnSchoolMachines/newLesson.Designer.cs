@@ -37,29 +37,29 @@
             System.Windows.Forms.Label expereanceOfClassLabel;
             System.Windows.Forms.Label kindLabel;
             this.label1 = new System.Windows.Forms.Label();
-            this.cboFindByClientName = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.classTextBox = new System.Windows.Forms.TextBox();
-            this.timeDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.lessPriorTextBox = new System.Windows.Forms.TextBox();
-            this.expereanceOfClassTextBox = new System.Windows.Forms.TextBox();
-            this.kindTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.cboClientName = new System.Windows.Forms.ComboBox();
             this.vCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vCustomersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
+            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnNewLessonSubmit = new System.Windows.Forms.Button();
+            this.txtNewLessonClass = new System.Windows.Forms.TextBox();
             this.lessonsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dateNewLessonDate = new System.Windows.Forms.DateTimePicker();
+            this.txtLessonPrior = new System.Windows.Forms.TextBox();
+            this.txtExperienceOfClass = new System.Windows.Forms.TextBox();
+            this.experienceLevelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtTypeOfClass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNewLessonTime = new System.Windows.Forms.TextBox();
+            this.btnPrintReciept = new System.Windows.Forms.Button();
+            this.vCustomersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
             this.lessonsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.LessonsTableAdapter();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboNewLessonInstructor = new System.Windows.Forms.ComboBox();
             this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.instructorsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.InstructorsTableAdapter();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboNewLessonStudent = new System.Windows.Forms.ComboBox();
             this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.experienceLevelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.experienceLevelsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.ExperienceLevelsTableAdapter();
             classLabel = new System.Windows.Forms.Label();
             instructionLabel = new System.Windows.Forms.Label();
@@ -68,12 +68,12 @@
             lessPriorLabel = new System.Windows.Forms.Label();
             expereanceOfClassLabel = new System.Windows.Forms.Label();
             kindLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lessonsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.experienceLevelsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.experienceLevelsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // classLabel
@@ -148,75 +148,96 @@
             this.label1.TabIndex = 59;
             this.label1.Text = "Client:";
             // 
-            // cboFindByClientName
+            // cboClientName
             // 
-            this.cboFindByClientName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.vCustomersBindingSource, "FullName", true));
-            this.cboFindByClientName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.vCustomersBindingSource, "CustomerID", true));
-            this.cboFindByClientName.DataSource = this.vCustomersBindingSource;
-            this.cboFindByClientName.DisplayMember = "FullName";
-            this.cboFindByClientName.FormattingEnabled = true;
-            this.cboFindByClientName.Location = new System.Drawing.Point(144, 20);
-            this.cboFindByClientName.Name = "cboFindByClientName";
-            this.cboFindByClientName.Size = new System.Drawing.Size(200, 21);
-            this.cboFindByClientName.TabIndex = 58;
+            this.cboClientName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.vCustomersBindingSource, "FullName", true));
+            this.cboClientName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.vCustomersBindingSource, "CustomerID", true));
+            this.cboClientName.DataSource = this.vCustomersBindingSource;
+            this.cboClientName.DisplayMember = "FullName";
+            this.cboClientName.FormattingEnabled = true;
+            this.cboClientName.Location = new System.Drawing.Point(144, 20);
+            this.cboClientName.Name = "cboClientName";
+            this.cboClientName.Size = new System.Drawing.Size(200, 21);
+            this.cboClientName.TabIndex = 58;
             // 
-            // button2
+            // vCustomersBindingSource
             // 
-            this.button2.Location = new System.Drawing.Point(237, 283);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 57;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.vCustomersBindingSource.DataMember = "vCustomers";
+            this.vCustomersBindingSource.DataSource = this.horseFarmDataSet1;
             // 
-            // button1
+            // horseFarmDataSet1
             // 
-            this.button1.Location = new System.Drawing.Point(32, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
+            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // classTextBox
+            // btnCancel
             // 
-            this.classTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "Class", true));
-            this.classTextBox.Location = new System.Drawing.Point(144, 47);
-            this.classTextBox.Name = "classTextBox";
-            this.classTextBox.Size = new System.Drawing.Size(200, 20);
-            this.classTextBox.TabIndex = 41;
+            this.btnCancel.Location = new System.Drawing.Point(237, 283);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 57;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
             // 
-            // timeDateDateTimePicker
+            // btnNewLessonSubmit
             // 
-            this.timeDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "LessonDate", true));
-            this.timeDateDateTimePicker.Location = new System.Drawing.Point(144, 99);
-            this.timeDateDateTimePicker.Name = "timeDateDateTimePicker";
-            this.timeDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.timeDateDateTimePicker.TabIndex = 45;
+            this.btnNewLessonSubmit.Location = new System.Drawing.Point(32, 283);
+            this.btnNewLessonSubmit.Name = "btnNewLessonSubmit";
+            this.btnNewLessonSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnNewLessonSubmit.TabIndex = 56;
+            this.btnNewLessonSubmit.Text = "Submit";
+            this.btnNewLessonSubmit.UseVisualStyleBackColor = true;
             // 
-            // lessPriorTextBox
+            // txtNewLessonClass
             // 
-            this.lessPriorTextBox.Location = new System.Drawing.Point(144, 185);
-            this.lessPriorTextBox.Name = "lessPriorTextBox";
-            this.lessPriorTextBox.Size = new System.Drawing.Size(200, 20);
-            this.lessPriorTextBox.TabIndex = 49;
+            this.txtNewLessonClass.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "Class", true));
+            this.txtNewLessonClass.Location = new System.Drawing.Point(144, 47);
+            this.txtNewLessonClass.Name = "txtNewLessonClass";
+            this.txtNewLessonClass.Size = new System.Drawing.Size(200, 20);
+            this.txtNewLessonClass.TabIndex = 41;
             // 
-            // expereanceOfClassTextBox
+            // lessonsBindingSource
             // 
-            this.expereanceOfClassTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.experienceLevelsBindingSource, "ExperienceLevel", true));
-            this.expereanceOfClassTextBox.Location = new System.Drawing.Point(144, 211);
-            this.expereanceOfClassTextBox.Name = "expereanceOfClassTextBox";
-            this.expereanceOfClassTextBox.Size = new System.Drawing.Size(200, 20);
-            this.expereanceOfClassTextBox.TabIndex = 51;
+            this.lessonsBindingSource.DataMember = "Lessons";
+            this.lessonsBindingSource.DataSource = this.horseFarmDataSet1;
             // 
-            // kindTextBox
+            // dateNewLessonDate
             // 
-            this.kindTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "TypeOfLesson", true));
-            this.kindTextBox.Location = new System.Drawing.Point(144, 237);
-            this.kindTextBox.Name = "kindTextBox";
-            this.kindTextBox.Size = new System.Drawing.Size(200, 20);
-            this.kindTextBox.TabIndex = 55;
+            this.dateNewLessonDate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "LessonDate", true));
+            this.dateNewLessonDate.Location = new System.Drawing.Point(144, 99);
+            this.dateNewLessonDate.Name = "dateNewLessonDate";
+            this.dateNewLessonDate.Size = new System.Drawing.Size(200, 20);
+            this.dateNewLessonDate.TabIndex = 45;
+            // 
+            // txtLessonPrior
+            // 
+            this.txtLessonPrior.Location = new System.Drawing.Point(144, 185);
+            this.txtLessonPrior.Name = "txtLessonPrior";
+            this.txtLessonPrior.Size = new System.Drawing.Size(200, 20);
+            this.txtLessonPrior.TabIndex = 49;
+            // 
+            // txtExperienceOfClass
+            // 
+            this.txtExperienceOfClass.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.experienceLevelsBindingSource, "ExperienceLevel", true));
+            this.txtExperienceOfClass.Location = new System.Drawing.Point(144, 211);
+            this.txtExperienceOfClass.Name = "txtExperienceOfClass";
+            this.txtExperienceOfClass.Size = new System.Drawing.Size(200, 20);
+            this.txtExperienceOfClass.TabIndex = 51;
+            // 
+            // experienceLevelsBindingSource
+            // 
+            this.experienceLevelsBindingSource.DataMember = "ExperienceLevels";
+            this.experienceLevelsBindingSource.DataSource = this.horseFarmDataSet1;
+            // 
+            // txtTypeOfClass
+            // 
+            this.txtTypeOfClass.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "TypeOfLesson", true));
+            this.txtTypeOfClass.Location = new System.Drawing.Point(144, 237);
+            this.txtTypeOfClass.Name = "txtTypeOfClass";
+            this.txtTypeOfClass.Size = new System.Drawing.Size(200, 20);
+            this.txtTypeOfClass.TabIndex = 55;
             // 
             // label2
             // 
@@ -228,56 +249,41 @@
             this.label2.Text = "Time:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtNewLessonTime
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "LessonTime", true));
-            this.textBox1.Location = new System.Drawing.Point(144, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 61;
+            this.txtNewLessonTime.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lessonsBindingSource, "LessonTime", true));
+            this.txtNewLessonTime.Location = new System.Drawing.Point(144, 131);
+            this.txtNewLessonTime.Name = "txtNewLessonTime";
+            this.txtNewLessonTime.Size = new System.Drawing.Size(200, 20);
+            this.txtNewLessonTime.TabIndex = 61;
             // 
-            // button3
+            // btnPrintReciept
             // 
-            this.button3.Location = new System.Drawing.Point(132, 283);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 23);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "Print Reciept";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // horseFarmDataSet1
-            // 
-            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
-            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vCustomersBindingSource
-            // 
-            this.vCustomersBindingSource.DataMember = "vCustomers";
-            this.vCustomersBindingSource.DataSource = this.horseFarmDataSet1;
+            this.btnPrintReciept.Location = new System.Drawing.Point(132, 283);
+            this.btnPrintReciept.Name = "btnPrintReciept";
+            this.btnPrintReciept.Size = new System.Drawing.Size(79, 23);
+            this.btnPrintReciept.TabIndex = 62;
+            this.btnPrintReciept.Text = "Print Reciept";
+            this.btnPrintReciept.UseVisualStyleBackColor = true;
             // 
             // vCustomersTableAdapter
             // 
             this.vCustomersTableAdapter.ClearBeforeFill = true;
             // 
-            // lessonsBindingSource
-            // 
-            this.lessonsBindingSource.DataMember = "Lessons";
-            this.lessonsBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
             // lessonsTableAdapter
             // 
             this.lessonsTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBox1
+            // cboNewLessonInstructor
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.instructorsBindingSource, "LastName", true));
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.instructorsBindingSource, "InstructorID", true));
-            this.comboBox1.DataSource = this.lessonsBindingSource;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 63;
+            this.cboNewLessonInstructor.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.instructorsBindingSource, "LastName", true));
+            this.cboNewLessonInstructor.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.instructorsBindingSource, "InstructorID", true));
+            this.cboNewLessonInstructor.DataSource = this.lessonsBindingSource;
+            this.cboNewLessonInstructor.FormattingEnabled = true;
+            this.cboNewLessonInstructor.Location = new System.Drawing.Point(144, 72);
+            this.cboNewLessonInstructor.Name = "cboNewLessonInstructor";
+            this.cboNewLessonInstructor.Size = new System.Drawing.Size(200, 21);
+            this.cboNewLessonInstructor.TabIndex = 63;
             // 
             // instructorsBindingSource
             // 
@@ -288,17 +294,17 @@
             // 
             this.instructorsTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBox2
+            // cboNewLessonStudent
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dependentsBindingSource, "DependentID", true));
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.dependentsBindingSource, "FirstName", true));
-            this.comboBox2.DataSource = this.dependentsBindingSource;
-            this.comboBox2.DisplayMember = "FirstName";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(144, 157);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 21);
-            this.comboBox2.TabIndex = 64;
+            this.cboNewLessonStudent.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dependentsBindingSource, "DependentID", true));
+            this.cboNewLessonStudent.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.dependentsBindingSource, "FirstName", true));
+            this.cboNewLessonStudent.DataSource = this.dependentsBindingSource;
+            this.cboNewLessonStudent.DisplayMember = "FirstName";
+            this.cboNewLessonStudent.FormattingEnabled = true;
+            this.cboNewLessonStudent.Location = new System.Drawing.Point(144, 157);
+            this.cboNewLessonStudent.Name = "cboNewLessonStudent";
+            this.cboNewLessonStudent.Size = new System.Drawing.Size(200, 21);
+            this.cboNewLessonStudent.TabIndex = 64;
             // 
             // dependentsBindingSource
             // 
@@ -309,11 +315,6 @@
             // 
             this.dependentsTableAdapter.ClearBeforeFill = true;
             // 
-            // experienceLevelsBindingSource
-            // 
-            this.experienceLevelsBindingSource.DataMember = "ExperienceLevels";
-            this.experienceLevelsBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
             // experienceLevelsTableAdapter
             // 
             this.experienceLevelsTableAdapter.ClearBeforeFill = true;
@@ -323,36 +324,36 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 324);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cboNewLessonStudent);
+            this.Controls.Add(this.cboNewLessonInstructor);
+            this.Controls.Add(this.btnPrintReciept);
+            this.Controls.Add(this.txtNewLessonTime);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cboFindByClientName);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cboClientName);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnNewLessonSubmit);
             this.Controls.Add(classLabel);
-            this.Controls.Add(this.classTextBox);
+            this.Controls.Add(this.txtNewLessonClass);
             this.Controls.Add(instructionLabel);
             this.Controls.Add(timeDateLabel);
-            this.Controls.Add(this.timeDateDateTimePicker);
+            this.Controls.Add(this.dateNewLessonDate);
             this.Controls.Add(studentLabel);
             this.Controls.Add(lessPriorLabel);
-            this.Controls.Add(this.lessPriorTextBox);
+            this.Controls.Add(this.txtLessonPrior);
             this.Controls.Add(expereanceOfClassLabel);
-            this.Controls.Add(this.expereanceOfClassTextBox);
+            this.Controls.Add(this.txtExperienceOfClass);
             this.Controls.Add(kindLabel);
-            this.Controls.Add(this.kindTextBox);
+            this.Controls.Add(this.txtTypeOfClass);
             this.Name = "newLesson";
-            this.Text = "newLesson";
+            this.Text = "New Lesson";
             this.Load += new System.EventHandler(this.newLesson_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lessonsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.experienceLevelsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.experienceLevelsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,26 +362,26 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cboFindByClientName;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox classTextBox;
-        private System.Windows.Forms.DateTimePicker timeDateDateTimePicker;
-        private System.Windows.Forms.TextBox lessPriorTextBox;
-        private System.Windows.Forms.TextBox expereanceOfClassTextBox;
-        private System.Windows.Forms.TextBox kindTextBox;
+        private System.Windows.Forms.ComboBox cboClientName;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnNewLessonSubmit;
+        private System.Windows.Forms.TextBox txtNewLessonClass;
+        private System.Windows.Forms.DateTimePicker dateNewLessonDate;
+        private System.Windows.Forms.TextBox txtLessonPrior;
+        private System.Windows.Forms.TextBox txtExperienceOfClass;
+        private System.Windows.Forms.TextBox txtTypeOfClass;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtNewLessonTime;
+        private System.Windows.Forms.Button btnPrintReciept;
         private HorseFarmDataSet1 horseFarmDataSet1;
         private System.Windows.Forms.BindingSource vCustomersBindingSource;
         private HorseFarmDataSet1TableAdapters.vCustomersTableAdapter vCustomersTableAdapter;
         private System.Windows.Forms.BindingSource lessonsBindingSource;
         private HorseFarmDataSet1TableAdapters.LessonsTableAdapter lessonsTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboNewLessonInstructor;
         private System.Windows.Forms.BindingSource instructorsBindingSource;
         private HorseFarmDataSet1TableAdapters.InstructorsTableAdapter instructorsTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboNewLessonStudent;
         private System.Windows.Forms.BindingSource dependentsBindingSource;
         private HorseFarmDataSet1TableAdapters.DependentsTableAdapter dependentsTableAdapter;
         private System.Windows.Forms.BindingSource experienceLevelsBindingSource;

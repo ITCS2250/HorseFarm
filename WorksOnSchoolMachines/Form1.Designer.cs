@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radSortByStudent = new System.Windows.Forms.RadioButton();
-            this.radSortByTrainer = new System.Windows.Forms.RadioButton();
-            this.radSortByHorse = new System.Windows.Forms.RadioButton();
-            this.radSortByTime = new System.Windows.Forms.RadioButton();
             this.radFindByClientName = new System.Windows.Forms.RadioButton();
             this.radFindByHorseName = new System.Windows.Forms.RadioButton();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -47,11 +42,16 @@
             this.radDisplayLessons = new System.Windows.Forms.RadioButton();
             this.BtnClient = new System.Windows.Forms.Button();
             this.cboFindByClientName = new System.Windows.Forms.ComboBox();
+            this.vCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.horseFarmDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
             this.btnHorse = new System.Windows.Forms.Button();
             this.cboFindByHorseName = new System.Windows.Forms.ComboBox();
+            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cboFindByStudentName = new System.Windows.Forms.ComboBox();
+            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.radFindByStudentName = new System.Windows.Forms.RadioButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -72,86 +72,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
-            this.horseFarmDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.horsesTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
-            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.vCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vCustomersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radSortByStudent);
-            this.groupBox2.Controls.Add(this.radSortByTrainer);
-            this.groupBox2.Controls.Add(this.radSortByHorse);
-            this.groupBox2.Controls.Add(this.radSortByTime);
-            this.groupBox2.Location = new System.Drawing.Point(489, 29);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(82, 116);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sort By:";
-            // 
-            // radSortByStudent
-            // 
-            this.radSortByStudent.AutoSize = true;
-            this.radSortByStudent.Location = new System.Drawing.Point(12, 89);
-            this.radSortByStudent.Name = "radSortByStudent";
-            this.radSortByStudent.Size = new System.Drawing.Size(62, 17);
-            this.radSortByStudent.TabIndex = 1;
-            this.radSortByStudent.TabStop = true;
-            this.radSortByStudent.Text = "Student";
-            this.radSortByStudent.UseVisualStyleBackColor = true;
-            // 
-            // radSortByTrainer
-            // 
-            this.radSortByTrainer.AutoSize = true;
-            this.radSortByTrainer.Location = new System.Drawing.Point(12, 43);
-            this.radSortByTrainer.Name = "radSortByTrainer";
-            this.radSortByTrainer.Size = new System.Drawing.Size(58, 17);
-            this.radSortByTrainer.TabIndex = 1;
-            this.radSortByTrainer.TabStop = true;
-            this.radSortByTrainer.Text = "Trainer";
-            this.radSortByTrainer.UseVisualStyleBackColor = true;
-            // 
-            // radSortByHorse
-            // 
-            this.radSortByHorse.AutoSize = true;
-            this.radSortByHorse.Location = new System.Drawing.Point(12, 66);
-            this.radSortByHorse.Name = "radSortByHorse";
-            this.radSortByHorse.Size = new System.Drawing.Size(53, 17);
-            this.radSortByHorse.TabIndex = 0;
-            this.radSortByHorse.TabStop = true;
-            this.radSortByHorse.Text = "Horse";
-            this.radSortByHorse.UseVisualStyleBackColor = true;
-            // 
-            // radSortByTime
-            // 
-            this.radSortByTime.AutoSize = true;
-            this.radSortByTime.Location = new System.Drawing.Point(12, 20);
-            this.radSortByTime.Name = "radSortByTime";
-            this.radSortByTime.Size = new System.Drawing.Size(48, 17);
-            this.radSortByTime.TabIndex = 0;
-            this.radSortByTime.TabStop = true;
-            this.radSortByTime.Text = "Time";
-            this.radSortByTime.UseVisualStyleBackColor = true;
             // 
             // radFindByClientName
             // 
@@ -283,6 +220,21 @@
             this.cboFindByClientName.TabIndex = 0;
             this.cboFindByClientName.ValueMember = "CustomerID";
             // 
+            // vCustomersBindingSource
+            // 
+            this.vCustomersBindingSource.DataMember = "vCustomers";
+            this.vCustomersBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
+            // 
+            // horseFarmDataSet1BindingSource
+            // 
+            this.horseFarmDataSet1BindingSource.DataSource = this.horseFarmDataSet1;
+            this.horseFarmDataSet1BindingSource.Position = 0;
+            // 
+            // horseFarmDataSet1
+            // 
+            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
+            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // btnHorse
             // 
             this.btnHorse.Location = new System.Drawing.Point(111, 19);
@@ -303,15 +255,19 @@
             this.cboFindByHorseName.Size = new System.Drawing.Size(121, 21);
             this.cboFindByHorseName.TabIndex = 0;
             // 
+            // horsesBindingSource
+            // 
+            this.horsesBindingSource.DataMember = "Horses";
+            this.horsesBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.monthCalendar1);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Location = new System.Drawing.Point(12, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(812, 247);
+            this.groupBox1.Size = new System.Drawing.Size(684, 247);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lesson Data";
@@ -324,7 +280,7 @@
             this.groupBox4.Controls.Add(this.cboFindByHorseName);
             this.groupBox4.Controls.Add(this.cboFindByStudentName);
             this.groupBox4.Controls.Add(this.radFindByStudentName);
-            this.groupBox4.Location = new System.Drawing.Point(617, 19);
+            this.groupBox4.Location = new System.Drawing.Point(489, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(177, 198);
             this.groupBox4.TabIndex = 5;
@@ -340,6 +296,11 @@
             this.cboFindByStudentName.Name = "cboFindByStudentName";
             this.cboFindByStudentName.Size = new System.Drawing.Size(121, 21);
             this.cboFindByStudentName.TabIndex = 0;
+            // 
+            // dependentsBindingSource
+            // 
+            this.dependentsBindingSource.DataMember = "Dependents";
+            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
             // 
             // radFindByStudentName
             // 
@@ -376,7 +337,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(873, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(722, 25);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -491,7 +452,7 @@
             this.groupBox6.Controls.Add(this.button3);
             this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Location = new System.Drawing.Point(467, 293);
+            this.groupBox6.Location = new System.Drawing.Point(380, 293);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(316, 57);
             this.groupBox6.TabIndex = 11;
@@ -530,38 +491,13 @@
             this.bindingSource1.DataSource = this.horseFarmDataSet1;
             this.bindingSource1.Position = 0;
             // 
-            // horseFarmDataSet1
-            // 
-            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
-            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // horseFarmDataSet1BindingSource
-            // 
-            this.horseFarmDataSet1BindingSource.DataSource = this.horseFarmDataSet1;
-            this.horseFarmDataSet1BindingSource.Position = 0;
-            // 
-            // horsesBindingSource
-            // 
-            this.horsesBindingSource.DataMember = "Horses";
-            this.horsesBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
-            // 
             // horsesTableAdapter
             // 
             this.horsesTableAdapter.ClearBeforeFill = true;
             // 
-            // dependentsBindingSource
-            // 
-            this.dependentsBindingSource.DataMember = "Dependents";
-            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
-            // 
             // dependentsTableAdapter
             // 
             this.dependentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // vCustomersBindingSource
-            // 
-            this.vCustomersBindingSource.DataMember = "vCustomers";
-            this.vCustomersBindingSource.DataSource = this.horseFarmDataSet1BindingSource;
             // 
             // vCustomersTableAdapter
             // 
@@ -571,33 +507,31 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 374);
+            this.ClientSize = new System.Drawing.Size(722, 374);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.BtnClient);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Horse Farm";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,11 +539,6 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radSortByStudent;
-        private System.Windows.Forms.RadioButton radSortByTrainer;
-        private System.Windows.Forms.RadioButton radSortByHorse;
-        private System.Windows.Forms.RadioButton radSortByTime;
         private System.Windows.Forms.RadioButton radFindByClientName;
         private System.Windows.Forms.RadioButton radFindByHorseName;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
