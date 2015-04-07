@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WorksOnSchoolMachines
 {
@@ -17,6 +18,13 @@ namespace WorksOnSchoolMachines
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+        }
+
+        static public SqlConnection ConnectToDB(){
+            string ConStr = Properties.Settings.Default.HorseFarmConnectionString;
+            SqlConnection conn = new SqlConnection(ConStr);
+            conn.Open();
+            return conn;
         }
     }
 }

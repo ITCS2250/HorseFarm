@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WorksOnSchoolMachines
 {
@@ -35,7 +36,13 @@ namespace WorksOnSchoolMachines
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            SqlConnection conn = Program.ConnectToDB();
+            SqlCommand cmd = new SqlCommand("pAddNewRider", conn);
+            cmd.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = textBox2.Text;
+            // add parameterized query, using control values (rename)
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }
