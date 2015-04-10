@@ -33,7 +33,7 @@
             System.Windows.Forms.Label timeDateLabel;
             this.txtVetReason = new System.Windows.Forms.TextBox();
             this.horseCareBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 =new HorseFarm.HorseFarmDataSet1();
+            this.horseFarmDataSet1 = new HorseFarm.HorseFarmDataSet1();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnHCsubmit = new System.Windows.Forms.Button();
             this.txtHorseCareTime = new System.Windows.Forms.TextBox();
@@ -45,8 +45,8 @@
             this.vetsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnHCviewCalendar = new System.Windows.Forms.Button();
             this.vetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vetsTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.VetsTableAdapter();
-            this.horseCareTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.HorseCareTableAdapter();
+            this.vetsTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.VetsTableAdapter();
+            this.horseCareTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.HorseCareTableAdapter();
             timeLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.horseCareBindingSource)).BeginInit();
@@ -58,7 +58,7 @@
             // timeLabel
             // 
             timeLabel.AutoSize = true;
-            timeLabel.Location = new System.Drawing.Point(18, 272);
+            timeLabel.Location = new System.Drawing.Point(21, 290);
             timeLabel.Name = "timeLabel";
             timeLabel.Size = new System.Drawing.Size(33, 13);
             timeLabel.TabIndex = 29;
@@ -67,7 +67,7 @@
             // timeDateLabel
             // 
             timeDateLabel.AutoSize = true;
-            timeDateLabel.Location = new System.Drawing.Point(18, 247);
+            timeDateLabel.Location = new System.Drawing.Point(21, 265);
             timeDateLabel.Name = "timeDateLabel";
             timeDateLabel.Size = new System.Drawing.Size(33, 13);
             timeDateLabel.TabIndex = 26;
@@ -76,7 +76,7 @@
             // txtVetReason
             // 
             this.txtVetReason.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "Reason", true));
-            this.txtVetReason.Location = new System.Drawing.Point(85, 216);
+            this.txtVetReason.Location = new System.Drawing.Point(88, 234);
             this.txtVetReason.Name = "txtVetReason";
             this.txtVetReason.Size = new System.Drawing.Size(200, 20);
             this.txtVetReason.TabIndex = 33;
@@ -93,7 +93,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(229, 308);
+            this.btnCancel.Location = new System.Drawing.Point(213, 326);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 32;
@@ -103,7 +103,7 @@
             // 
             // btnHCsubmit
             // 
-            this.btnHCsubmit.Location = new System.Drawing.Point(21, 308);
+            this.btnHCsubmit.Location = new System.Drawing.Point(24, 326);
             this.btnHCsubmit.Name = "btnHCsubmit";
             this.btnHCsubmit.Size = new System.Drawing.Size(75, 23);
             this.btnHCsubmit.TabIndex = 31;
@@ -113,7 +113,7 @@
             // txtHorseCareTime
             // 
             this.txtHorseCareTime.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "SickTime", true));
-            this.txtHorseCareTime.Location = new System.Drawing.Point(85, 269);
+            this.txtHorseCareTime.Location = new System.Drawing.Point(88, 287);
             this.txtHorseCareTime.Name = "txtHorseCareTime";
             this.txtHorseCareTime.Size = new System.Drawing.Size(200, 20);
             this.txtHorseCareTime.TabIndex = 30;
@@ -121,7 +121,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 219);
+            this.label2.Location = new System.Drawing.Point(21, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 28;
@@ -130,7 +130,7 @@
             // timeDateHorseCare
             // 
             this.timeDateHorseCare.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "SickDate", true));
-            this.timeDateHorseCare.Location = new System.Drawing.Point(85, 243);
+            this.timeDateHorseCare.Location = new System.Drawing.Point(88, 261);
             this.timeDateHorseCare.Name = "timeDateHorseCare";
             this.timeDateHorseCare.Size = new System.Drawing.Size(200, 20);
             this.timeDateHorseCare.TabIndex = 27;
@@ -138,7 +138,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 193);
+            this.label1.Location = new System.Drawing.Point(21, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 25;
@@ -146,7 +146,7 @@
             // 
             // calendarHorseCare
             // 
-            this.calendarHorseCare.Location = new System.Drawing.Point(18, 18);
+            this.calendarHorseCare.Location = new System.Drawing.Point(37, 18);
             this.calendarHorseCare.Name = "calendarHorseCare";
             this.calendarHorseCare.TabIndex = 24;
             // 
@@ -156,7 +156,7 @@
             this.cboVetName.DisplayMember = "LastName";
             this.cboVetName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVetName.FormattingEnabled = true;
-            this.cboVetName.Location = new System.Drawing.Point(85, 189);
+            this.cboVetName.Location = new System.Drawing.Point(88, 207);
             this.cboVetName.Name = "cboVetName";
             this.cboVetName.Size = new System.Drawing.Size(200, 21);
             this.cboVetName.TabIndex = 34;
@@ -168,11 +168,11 @@
             // 
             // btnHCviewCalendar
             // 
-            this.btnHCviewCalendar.Location = new System.Drawing.Point(117, 308);
+            this.btnHCviewCalendar.Location = new System.Drawing.Point(119, 326);
             this.btnHCviewCalendar.Name = "btnHCviewCalendar";
-            this.btnHCviewCalendar.Size = new System.Drawing.Size(93, 23);
+            this.btnHCviewCalendar.Size = new System.Drawing.Size(74, 23);
             this.btnHCviewCalendar.TabIndex = 35;
-            this.btnHCviewCalendar.Text = "View Calendar";
+            this.btnHCviewCalendar.Text = "Calendar";
             this.btnHCviewCalendar.UseVisualStyleBackColor = true;
             // 
             // vetsBindingSource
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 349);
+            this.ClientSize = new System.Drawing.Size(312, 364);
             this.Controls.Add(this.btnHCviewCalendar);
             this.Controls.Add(this.cboVetName);
             this.Controls.Add(this.txtVetReason);
