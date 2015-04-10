@@ -31,16 +31,44 @@ namespace HorseFarm
 
         private void btnNewRiderSubmit_Click(object sender, EventArgs e)
         {
-            SqlParameter[] sqlParams = new SqlParameter[1];
-            sqlParams[0] = new SqlParameter("@FirstName", SqlDbType.VarChar);
-            sqlParams[0].Value = txtNewStudentFirstName.Text;
+            if (isMinorCheckBox.Checked) { 
+                SqlParameter[] sqlParams = new SqlParameter[3];
+                sqlParams[0] = new SqlParameter("@CustomerID", SqlDbType.Int);
+                sqlParams[0].Value = parentComboBox.SelectedValue;
 
-            Program.ExecuteStoredProc("pAddNewRider", sqlParams);
+                sqlParams[1] = new SqlParameter("@FirstName", SqlDbType.VarChar);
+                sqlParams[1].Value = txtNewStudentFirstName.Text;
+
+                sqlParams[2] = new SqlParameter("@LastName", SqlDbType.VarChar);
+                sqlParams[2].Value = txtNewStudentLastName.Text;
+
+                // and so on
+
+                Program.ExecuteStoredProc("pAddDependent", sqlParams);
+            }
+            else
+            {
+                SqlParameter[] sqlParams = new SqlParameter[3];
+
+                sqlParams[1] = new SqlParameter("@FirstName", SqlDbType.VarChar);
+                sqlParams[1].Value = txtNewStudentFirstName.Text;
+
+                sqlParams[2] = new SqlParameter("@LastName", SqlDbType.VarChar);
+                sqlParams[2].Value = txtNewStudentLastName.Text;
+
+                // and so on
+                Program.ExecuteStoredProc("pAddCustomer", sqlParams);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void isMinorCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            parentComboBox.Enabled = isMinorCheckBox.Checked;
         }
     }
 }
