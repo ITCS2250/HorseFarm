@@ -39,7 +39,7 @@
             System.Windows.Forms.Label argPerDayLabel;
             this.txtNewRiderAddress = new System.Windows.Forms.TextBox();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.horseFarmDataSet1 =new HorseFarm.HorseFarmDataSet1();
             this.txtNewStudentHorse = new System.Windows.Forms.TextBox();
             this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtNewStudentSchool = new System.Windows.Forms.TextBox();
@@ -80,9 +80,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnNewRiderSubmit = new System.Windows.Forms.Button();
-            this.customersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.CustomersTableAdapter();
-            this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.horsesTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
+            this.customersTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.CustomersTableAdapter();
+            this.dependentsTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
+            this.horsesTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
             horseLabel = new System.Windows.Forms.Label();
             arrivedLabel = new System.Windows.Forms.Label();
             schoolLabel = new System.Windows.Forms.Label();

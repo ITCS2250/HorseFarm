@@ -60,7 +60,15 @@ C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\Works
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.pdb
-C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe.config
-C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.exe
-C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.pdb
 C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe.config
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Form1.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.horseCare.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.newLesson.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.newRider.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Properties.Resources.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.pdb
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.exe
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.pdb

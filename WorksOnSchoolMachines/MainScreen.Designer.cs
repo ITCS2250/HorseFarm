@@ -1,6 +1,6 @@
 ﻿namespace HorseFarm
 {
-    partial class Form1
+    partial class MainScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             this.radFindByClientName = new System.Windows.Forms.RadioButton();
             this.radFindByHorseName = new System.Windows.Forms.RadioButton();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -44,7 +44,7 @@
             this.cboFindByClientName = new System.Windows.Forms.ComboBox();
             this.vCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.horseFarmDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.horseFarmDataSet1 =new HorseFarm.HorseFarmDataSet1();
             this.btnHorse = new System.Windows.Forms.Button();
             this.cboFindByHorseName = new System.Windows.Forms.ComboBox();
             this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -72,9 +72,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.horsesTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
-            this.dependentsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.vCustomersTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
+            this.horsesTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
+            this.dependentsTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
+            this.vCustomersTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.vCustomersTableAdapter();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vCustomersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1BindingSource)).BeginInit();

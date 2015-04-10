@@ -33,7 +33,7 @@
             System.Windows.Forms.Label timeDateLabel;
             this.txtVetReason = new System.Windows.Forms.TextBox();
             this.horseCareBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new WorksOnSchoolMachines.HorseFarmDataSet1();
+            this.horseFarmDataSet1 =new HorseFarm.HorseFarmDataSet1();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnHCsubmit = new System.Windows.Forms.Button();
             this.txtHorseCareTime = new System.Windows.Forms.TextBox();
@@ -45,8 +45,8 @@
             this.vetsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnHCviewCalendar = new System.Windows.Forms.Button();
             this.vetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vetsTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.VetsTableAdapter();
-            this.horseCareTableAdapter = new WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters.HorseCareTableAdapter();
+            this.vetsTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.VetsTableAdapter();
+            this.horseCareTableAdapter =new HorseFarm.HorseFarmDataSet1TableAdapters.HorseCareTableAdapter();
             timeLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.horseCareBindingSource)).BeginInit();
