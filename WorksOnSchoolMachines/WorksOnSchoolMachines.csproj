@@ -7,8 +7,8 @@
     <ProjectGuid>{1911F28F-E749-48A8-A7FB-7179048D022C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WorksOnSchoolMachines</RootNamespace>
-    <AssemblyName>WorksOnSchoolMachines</AssemblyName>
+    <RootNamespace>HorseFarm</RootNamespace>
+    <AssemblyName>HorseFarm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="HorseFarmDataSet1.xsc">
       <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>

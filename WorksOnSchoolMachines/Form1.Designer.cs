@@ -1,4 +1,4 @@
-﻿namespace WorksOnSchoolMachines
+﻿namespace HorseFarm
 {
     partial class Form1
     {

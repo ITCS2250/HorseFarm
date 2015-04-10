@@ -60,3 +60,7 @@ C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\Works
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.csproj.GenerateResource.Cache
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.pdb
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\WorksOnSchoolMachines.exe.config
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.exe
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\obj\Debug\WorksOnSchoolMachines.pdb
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe.config

@@ -1,4 +1,4 @@
-﻿namespace WorksOnSchoolMachines
+﻿namespace HorseFarm
 {
     partial class newRider
     {
@@ -611,7 +611,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnNewRiderSubmit
             // 
@@ -621,7 +621,7 @@
             this.btnNewRiderSubmit.TabIndex = 9;
             this.btnNewRiderSubmit.Text = "Submit";
             this.btnNewRiderSubmit.UseVisualStyleBackColor = true;
-            this.btnNewRiderSubmit.Click += new System.EventHandler(this.button1_Click);
+            this.btnNewRiderSubmit.Click += new System.EventHandler(this.btnNewRiderSubmit_Click);
             // 
             // customersTableAdapter
             // 

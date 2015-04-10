@@ -9,18 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace WorksOnSchoolMachines
+namespace HorseFarm
 {
     public partial class newRider : Form
     {
         public newRider()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void newRider_Load(object sender, EventArgs e)
@@ -34,15 +29,18 @@ namespace WorksOnSchoolMachines
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnNewRiderSubmit_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = Program.ConnectToDB();
-            SqlCommand cmd = new SqlCommand("pAddNewRider", conn);
-            cmd.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = txtNewStudentFirstName.Text;
-            // add parameterized query, using control values (rename)
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            SqlParameter[] sqlParams = new SqlParameter[1];
+            sqlParams[0] = new SqlParameter("@FirstName", SqlDbType.VarChar);
+            sqlParams[0].Value = txtNewStudentFirstName.Text;
+
+            Program.ExecuteStoredProc("pAddNewRider", sqlParams);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

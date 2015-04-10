@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WorksOnSchoolMachines
+namespace HorseFarm
 {
     public partial class horseCare : Form
     {

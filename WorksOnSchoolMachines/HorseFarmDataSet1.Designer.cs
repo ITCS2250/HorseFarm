@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WorksOnSchoolMachines {
+namespace HorseFarm {
     
     
     /// <summary>
@@ -6772,7 +6772,7 @@ namespace WorksOnSchoolMachines {
         }
     }
 }
-namespace WorksOnSchoolMachines.HorseFarmDataSet1TableAdapters {
+namespace HorseFarm.HorseFarmDataSet1TableAdapters {
     
     
     /// <summary>
@@ -6933,7 +6933,7 @@ SELECT CampID, CustomerID, CampName FROM Camps WHERE (CampID = @CampID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7370,7 +7370,7 @@ SELECT CustomerID, Prefix, FirstName, LastName, Address, State, ZIP, HomePhone, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8096,7 +8096,7 @@ SELECT CustomerID, FirstName, LastName, DependentID FROM Dependents WHERE (Depen
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8477,7 +8477,7 @@ SELECT ID, ExperienceLevel FROM ExperienceLevels WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8817,7 +8817,7 @@ SELECT ID, VetID, Reason, SickDate, SickTime FROM HorseCare WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9209,7 +9209,7 @@ SELECT ID, VetID, Reason, SickDate, SickTime FROM HorseCare WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9539,7 +9539,7 @@ SELECT InstructorID, FirstName, LastName FROM Instructors WHERE (InstructorID = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9934,7 +9934,7 @@ SELECT LessonID, CustomerID, Class, InstructorID, LessonDate, LessonTime, Depend
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10475,7 +10475,7 @@ SELECT ShowID, CustomerID, ShowName FROM Shows WHERE (ShowID = @ShowID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10819,7 +10819,7 @@ SELECT VetID, FirstName, LastName FROM Vets WHERE (VetID = @VetID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11163,7 +11163,7 @@ SELECT VetID, FirstName, LastName FROM Vets WHERE (VetID = @VetID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WorksOnSchoolMachines.Properties.Settings.Default.HorseFarmConnectionString;
+            this._connection.ConnectionString = global::HorseFarm.Properties.Settings.Default.HorseFarmConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
