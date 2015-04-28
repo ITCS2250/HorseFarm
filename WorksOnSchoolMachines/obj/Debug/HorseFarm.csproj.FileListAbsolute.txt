@@ -1,0 +1,12 @@
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe.config
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.pdb
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.csprojResolveAssemblyReference.cache
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.MainScreen.resources
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.horseCare.resources
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.newLesson.resources
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.newRider.resources
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Properties.Resources.resources
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.csproj.GenerateResource.Cache
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.exe
+C:\Users\Public\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.pdb

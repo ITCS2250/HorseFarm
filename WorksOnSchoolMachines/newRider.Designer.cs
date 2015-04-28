@@ -53,15 +53,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.isMinorCheckBox = new System.Windows.Forms.CheckBox();
+            this.parentComboBox = new System.Windows.Forms.ComboBox();
+            this.parentLabel = new System.Windows.Forms.Label();
             this.dateTimeArrived = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnNewRiderSubmit = new System.Windows.Forms.Button();
             this.customersTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.CustomersTableAdapter();
             this.dependentsTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
             this.horsesTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
-            this.parentLabel = new System.Windows.Forms.Label();
-            this.parentComboBox = new System.Windows.Forms.ComboBox();
-            this.isMinorCheckBox = new System.Windows.Forms.CheckBox();
             horseLabel = new System.Windows.Forms.Label();
             arrivedLabel = new System.Windows.Forms.Label();
             schoolLabel = new System.Windows.Forms.Label();
@@ -287,6 +287,42 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
             // 
+            // isMinorCheckBox
+            // 
+            this.isMinorCheckBox.AutoSize = true;
+            this.isMinorCheckBox.Checked = true;
+            this.isMinorCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.isMinorCheckBox.Location = new System.Drawing.Point(290, 27);
+            this.isMinorCheckBox.Name = "isMinorCheckBox";
+            this.isMinorCheckBox.Size = new System.Drawing.Size(63, 17);
+            this.isMinorCheckBox.TabIndex = 62;
+            this.isMinorCheckBox.Text = "Is Minor";
+            this.isMinorCheckBox.UseVisualStyleBackColor = true;
+            this.isMinorCheckBox.CheckedChanged += new System.EventHandler(this.isMinorCheckBox_CheckedChanged);
+            // 
+            // parentComboBox
+            // 
+            this.parentComboBox.FormattingEnabled = true;
+            this.parentComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.parentComboBox.Location = new System.Drawing.Point(71, 25);
+            this.parentComboBox.Name = "parentComboBox";
+            this.parentComboBox.Size = new System.Drawing.Size(200, 21);
+            this.parentComboBox.TabIndex = 60;
+            // 
+            // parentLabel
+            // 
+            this.parentLabel.AutoSize = true;
+            this.parentLabel.Location = new System.Drawing.Point(6, 28);
+            this.parentLabel.Name = "parentLabel";
+            this.parentLabel.Size = new System.Drawing.Size(38, 13);
+            this.parentLabel.TabIndex = 59;
+            this.parentLabel.Text = "Parent";
+            // 
             // dateTimeArrived
             // 
             this.dateTimeArrived.Location = new System.Drawing.Point(71, 133);
@@ -325,36 +361,6 @@
             // horsesTableAdapter
             // 
             this.horsesTableAdapter.ClearBeforeFill = true;
-            // 
-            // parentLabel
-            // 
-            this.parentLabel.AutoSize = true;
-            this.parentLabel.Location = new System.Drawing.Point(6, 28);
-            this.parentLabel.Name = "parentLabel";
-            this.parentLabel.Size = new System.Drawing.Size(38, 13);
-            this.parentLabel.TabIndex = 59;
-            this.parentLabel.Text = "Parent";
-            // 
-            // parentComboBox
-            // 
-            this.parentComboBox.FormattingEnabled = true;
-            this.parentComboBox.Location = new System.Drawing.Point(71, 25);
-            this.parentComboBox.Name = "parentComboBox";
-            this.parentComboBox.Size = new System.Drawing.Size(200, 21);
-            this.parentComboBox.TabIndex = 60;
-            // 
-            // isMinorCheckBox
-            // 
-            this.isMinorCheckBox.AutoSize = true;
-            this.isMinorCheckBox.Checked = true;
-            this.isMinorCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.isMinorCheckBox.Location = new System.Drawing.Point(290, 27);
-            this.isMinorCheckBox.Name = "isMinorCheckBox";
-            this.isMinorCheckBox.Size = new System.Drawing.Size(63, 17);
-            this.isMinorCheckBox.TabIndex = 62;
-            this.isMinorCheckBox.Text = "Is Minor";
-            this.isMinorCheckBox.UseVisualStyleBackColor = true;
-            this.isMinorCheckBox.CheckedChanged += new System.EventHandler(this.isMinorCheckBox_CheckedChanged);
             // 
             // newRider
             // 
