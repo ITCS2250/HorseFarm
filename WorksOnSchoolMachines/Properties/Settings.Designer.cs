@@ -26,8 +26,7 @@ namespace HorseFarm.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CA123-S14726\\SQLEXPRESS;Initial Catalog=HorseFarm;Integrated Security" +
-            "=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=RYSKOLVA-PC;Initial Catalog=HorseFarm;Integrated Security=True")]
         public string HorseFarmConnectionString {
             get {
                 return ((string)(this["HorseFarmConnectionString"]));
