@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HorseFarmDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,11 +60,6 @@
     </Compile>
     <Compile Include="horseCare.Designer.cs">
       <DependentUpon>horseCare.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HorseFarmDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="newLesson.cs">
       <SubType>Form</SubType>
@@ -97,16 +97,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="HorseFarmDataSet1.xsc">
-      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
+    <None Include="HorseFarmDataSet.xsc">
+      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
     </None>
-    <None Include="HorseFarmDataSet1.xsd">
+    <None Include="HorseFarmDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HorseFarmDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+      <LastGenOutput>HorseFarmDataSet.Designer.cs</LastGenOutput>
     </None>
-    <None Include="HorseFarmDataSet1.xss">
-      <DependentUpon>HorseFarmDataSet1.xsd</DependentUpon>
+    <None Include="HorseFarmDataSet.xss">
+      <DependentUpon>HorseFarmDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

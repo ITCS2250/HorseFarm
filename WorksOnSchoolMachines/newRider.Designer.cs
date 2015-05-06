@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label horseLabel;
             System.Windows.Forms.Label arrivedLabel;
             System.Windows.Forms.Label schoolLabel;
@@ -37,31 +36,24 @@
             System.Windows.Forms.Label campLabel;
             System.Windows.Forms.Label hSCHLLabel;
             System.Windows.Forms.Label argPerDayLabel;
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new HorseFarm.HorseFarmDataSet1();
-            this.txtNewStudentHorse = new System.Windows.Forms.TextBox();
-            this.horsesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtNewStudentSchool = new System.Windows.Forms.TextBox();
             this.txtNewStudentShows = new System.Windows.Forms.TextBox();
             this.txtNewStudentHack = new System.Windows.Forms.TextBox();
             this.txtNewStudentCamp = new System.Windows.Forms.TextBox();
             this.txtNewStudentHSCHL = new System.Windows.Forms.TextBox();
             this.txtNewStudentArgPerDay = new System.Windows.Forms.TextBox();
             this.txtNewStudentLastName = new System.Windows.Forms.TextBox();
-            this.dependentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtNewStudentFirstName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.isMinorCheckBox = new System.Windows.Forms.CheckBox();
             this.parentComboBox = new System.Windows.Forms.ComboBox();
             this.parentLabel = new System.Windows.Forms.Label();
             this.dateTimeArrived = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnNewRiderSubmit = new System.Windows.Forms.Button();
-            this.customersTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.CustomersTableAdapter();
-            this.dependentsTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.DependentsTableAdapter();
-            this.horsesTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.HorsesTableAdapter();
             horseLabel = new System.Windows.Forms.Label();
             arrivedLabel = new System.Windows.Forms.Label();
             schoolLabel = new System.Windows.Forms.Label();
@@ -70,10 +62,6 @@
             campLabel = new System.Windows.Forms.Label();
             hSCHLLabel = new System.Windows.Forms.Label();
             argPerDayLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,36 +137,6 @@
             argPerDayLabel.TabIndex = 56;
             argPerDayLabel.Text = "Arg Per Day:";
             // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
-            // horseFarmDataSet1
-            // 
-            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
-            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // txtNewStudentHorse
-            // 
-            this.txtNewStudentHorse.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horsesBindingSource, "HorseName", true));
-            this.txtNewStudentHorse.Location = new System.Drawing.Point(71, 107);
-            this.txtNewStudentHorse.Name = "txtNewStudentHorse";
-            this.txtNewStudentHorse.Size = new System.Drawing.Size(200, 20);
-            this.txtNewStudentHorse.TabIndex = 43;
-            // 
-            // horsesBindingSource
-            // 
-            this.horsesBindingSource.DataMember = "Horses";
-            this.horsesBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
-            // txtNewStudentSchool
-            // 
-            this.txtNewStudentSchool.Location = new System.Drawing.Point(71, 159);
-            this.txtNewStudentSchool.Name = "txtNewStudentSchool";
-            this.txtNewStudentSchool.Size = new System.Drawing.Size(200, 20);
-            this.txtNewStudentSchool.TabIndex = 47;
-            // 
             // txtNewStudentShows
             // 
             this.txtNewStudentShows.Location = new System.Drawing.Point(71, 185);
@@ -216,20 +174,13 @@
             // 
             // txtNewStudentLastName
             // 
-            this.txtNewStudentLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "LastName", true));
             this.txtNewStudentLastName.Location = new System.Drawing.Point(71, 77);
             this.txtNewStudentLastName.Name = "txtNewStudentLastName";
             this.txtNewStudentLastName.Size = new System.Drawing.Size(200, 20);
             this.txtNewStudentLastName.TabIndex = 33;
             // 
-            // dependentsBindingSource
-            // 
-            this.dependentsBindingSource.DataMember = "Dependents";
-            this.dependentsBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
             // txtNewStudentFirstName
             // 
-            this.txtNewStudentFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dependentsBindingSource, "FirstName", true));
             this.txtNewStudentFirstName.Location = new System.Drawing.Point(71, 52);
             this.txtNewStudentFirstName.Name = "txtNewStudentFirstName";
             this.txtNewStudentFirstName.Size = new System.Drawing.Size(200, 20);
@@ -255,6 +206,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.isMinorCheckBox);
             this.groupBox2.Controls.Add(this.parentComboBox);
             this.groupBox2.Controls.Add(this.parentLabel);
@@ -262,10 +215,8 @@
             this.groupBox2.Controls.Add(this.btnCancel);
             this.groupBox2.Controls.Add(horseLabel);
             this.groupBox2.Controls.Add(this.btnNewRiderSubmit);
-            this.groupBox2.Controls.Add(this.txtNewStudentHorse);
             this.groupBox2.Controls.Add(arrivedLabel);
             this.groupBox2.Controls.Add(schoolLabel);
-            this.groupBox2.Controls.Add(this.txtNewStudentSchool);
             this.groupBox2.Controls.Add(showsLabel);
             this.groupBox2.Controls.Add(this.txtNewStudentShows);
             this.groupBox2.Controls.Add(hackLabel);
@@ -287,6 +238,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(71, 159);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(200, 21);
+            this.comboBox2.TabIndex = 64;
+            this.comboBox2.ValueMember = "ID";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(71, 104);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 21);
+            this.comboBox1.TabIndex = 63;
+            this.comboBox1.ValueMember = "ID";
+            // 
             // isMinorCheckBox
             // 
             this.isMinorCheckBox.AutoSize = true;
@@ -303,16 +272,11 @@
             // parentComboBox
             // 
             this.parentComboBox.FormattingEnabled = true;
-            this.parentComboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
             this.parentComboBox.Location = new System.Drawing.Point(71, 25);
             this.parentComboBox.Name = "parentComboBox";
             this.parentComboBox.Size = new System.Drawing.Size(200, 21);
             this.parentComboBox.TabIndex = 60;
+            this.parentComboBox.ValueMember = "CustomerID";
             // 
             // parentLabel
             // 
@@ -350,18 +314,6 @@
             this.btnNewRiderSubmit.UseVisualStyleBackColor = true;
             this.btnNewRiderSubmit.Click += new System.EventHandler(this.btnNewRiderSubmit_Click);
             // 
-            // customersTableAdapter
-            // 
-            this.customersTableAdapter.ClearBeforeFill = true;
-            // 
-            // dependentsTableAdapter
-            // 
-            this.dependentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // horsesTableAdapter
-            // 
-            this.horsesTableAdapter.ClearBeforeFill = true;
-            // 
             // newRider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,10 +323,6 @@
             this.Name = "newRider";
             this.Text = "New Rider";
             this.Load += new System.EventHandler(this.newRider_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horsesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dependentsBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -383,8 +331,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNewStudentHorse;
-        private System.Windows.Forms.TextBox txtNewStudentSchool;
         private System.Windows.Forms.TextBox txtNewStudentShows;
         private System.Windows.Forms.TextBox txtNewStudentHack;
         private System.Windows.Forms.TextBox txtNewStudentCamp;
@@ -397,16 +343,11 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnNewRiderSubmit;
-        private HorseFarmDataSet1 horseFarmDataSet1;
-        private System.Windows.Forms.BindingSource customersBindingSource;
-        private HorseFarmDataSet1TableAdapters.CustomersTableAdapter customersTableAdapter;
-        private System.Windows.Forms.BindingSource dependentsBindingSource;
-        private HorseFarmDataSet1TableAdapters.DependentsTableAdapter dependentsTableAdapter;
-        private System.Windows.Forms.BindingSource horsesBindingSource;
-        private HorseFarmDataSet1TableAdapters.HorsesTableAdapter horsesTableAdapter;
         private System.Windows.Forms.DateTimePicker dateTimeArrived;
         private System.Windows.Forms.CheckBox isMinorCheckBox;
         private System.Windows.Forms.ComboBox parentComboBox;
         private System.Windows.Forms.Label parentLabel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
