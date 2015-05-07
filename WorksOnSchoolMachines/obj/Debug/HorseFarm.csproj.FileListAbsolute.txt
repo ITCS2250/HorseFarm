@@ -22,3 +22,6 @@ C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\D
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.newRider.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Properties.Resources.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.csproj.GenerateResource.Cache
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\bin\Debug\HorseFarm.exe.config
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.exe
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.pdb
