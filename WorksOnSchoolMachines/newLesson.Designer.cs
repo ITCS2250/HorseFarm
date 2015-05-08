@@ -226,14 +226,6 @@
             this.cboNewLessonInstructor.Name = "cboNewLessonInstructor";
             this.cboNewLessonInstructor.Size = new System.Drawing.Size(200, 21);
             this.cboNewLessonInstructor.TabIndex = 63;
-            //
-            // cboNewLessonStudent
-            // 
-            this.cboNewLessonStudent.FormattingEnabled = true;
-            this.cboNewLessonStudent.Location = new System.Drawing.Point(144, 157);
-            this.cboNewLessonStudent.Name = "cboNewLessonStudent";
-            this.cboNewLessonStudent.Size = new System.Drawing.Size(200, 21);
-            this.cboNewLessonStudent.TabIndex = 64;
 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
