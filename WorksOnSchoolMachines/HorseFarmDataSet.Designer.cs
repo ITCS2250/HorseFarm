@@ -600,7 +600,7 @@ namespace HorseFarm {
         private void InitClass() {
             this.DataSetName = "HorseFarmDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/HorseFarmDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCamps = new CampsDataTable();

@@ -32,8 +32,6 @@
             System.Windows.Forms.Label timeLabel;
             System.Windows.Forms.Label timeDateLabel;
             this.txtVetReason = new System.Windows.Forms.TextBox();
-            this.horseCareBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.horseFarmDataSet1 = new HorseFarm.HorseFarmDataSet1();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnHCsubmit = new System.Windows.Forms.Button();
             this.txtHorseCareTime = new System.Windows.Forms.TextBox();
@@ -42,17 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.calendarHorseCare = new System.Windows.Forms.MonthCalendar();
             this.cboVetName = new System.Windows.Forms.ComboBox();
-            this.vetsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnHCviewCalendar = new System.Windows.Forms.Button();
-            this.vetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vetsTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.VetsTableAdapter();
-            this.horseCareTableAdapter = new HorseFarm.HorseFarmDataSet1TableAdapters.HorseCareTableAdapter();
             timeLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.horseCareBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vetsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vetsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // timeLabel
@@ -75,21 +65,10 @@
             // 
             // txtVetReason
             // 
-            this.txtVetReason.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "Reason", true));
             this.txtVetReason.Location = new System.Drawing.Point(88, 234);
             this.txtVetReason.Name = "txtVetReason";
             this.txtVetReason.Size = new System.Drawing.Size(200, 20);
             this.txtVetReason.TabIndex = 33;
-            // 
-            // horseCareBindingSource
-            // 
-            this.horseCareBindingSource.DataMember = "HorseCare";
-            this.horseCareBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
-            // horseFarmDataSet1
-            // 
-            this.horseFarmDataSet1.DataSetName = "HorseFarmDataSet1";
-            this.horseFarmDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnCancel
             // 
@@ -112,7 +91,6 @@
             // 
             // txtHorseCareTime
             // 
-            this.txtHorseCareTime.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "SickTime", true));
             this.txtHorseCareTime.Location = new System.Drawing.Point(88, 287);
             this.txtHorseCareTime.Name = "txtHorseCareTime";
             this.txtHorseCareTime.Size = new System.Drawing.Size(200, 20);
@@ -129,7 +107,6 @@
             // 
             // timeDateHorseCare
             // 
-            this.timeDateHorseCare.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horseCareBindingSource, "SickDate", true));
             this.timeDateHorseCare.Location = new System.Drawing.Point(88, 261);
             this.timeDateHorseCare.Name = "timeDateHorseCare";
             this.timeDateHorseCare.Size = new System.Drawing.Size(200, 20);
@@ -152,19 +129,12 @@
             // 
             // cboVetName
             // 
-            this.cboVetName.DataSource = this.vetsBindingSource1;
-            this.cboVetName.DisplayMember = "LastName";
             this.cboVetName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVetName.FormattingEnabled = true;
             this.cboVetName.Location = new System.Drawing.Point(88, 207);
             this.cboVetName.Name = "cboVetName";
             this.cboVetName.Size = new System.Drawing.Size(200, 21);
             this.cboVetName.TabIndex = 34;
-            // 
-            // vetsBindingSource1
-            // 
-            this.vetsBindingSource1.DataMember = "Vets";
-            this.vetsBindingSource1.DataSource = this.horseFarmDataSet1;
             // 
             // btnHCviewCalendar
             // 
@@ -174,19 +144,6 @@
             this.btnHCviewCalendar.TabIndex = 35;
             this.btnHCviewCalendar.Text = "Calendar";
             this.btnHCviewCalendar.UseVisualStyleBackColor = true;
-            // 
-            // vetsBindingSource
-            // 
-            this.vetsBindingSource.DataMember = "Vets";
-            this.vetsBindingSource.DataSource = this.horseFarmDataSet1;
-            // 
-            // vetsTableAdapter
-            // 
-            this.vetsTableAdapter.ClearBeforeFill = true;
-            // 
-            // horseCareTableAdapter
-            // 
-            this.horseCareTableAdapter.ClearBeforeFill = true;
             // 
             // horseCare
             // 
@@ -208,10 +165,6 @@
             this.Name = "horseCare";
             this.Text = "Horse Care";
             this.Load += new System.EventHandler(this.horseCare_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.horseCareBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horseFarmDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vetsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vetsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,11 +182,5 @@
         private System.Windows.Forms.MonthCalendar calendarHorseCare;
         private System.Windows.Forms.ComboBox cboVetName;
         private System.Windows.Forms.Button btnHCviewCalendar;
-        private HorseFarmDataSet1 horseFarmDataSet1;
-        private System.Windows.Forms.BindingSource vetsBindingSource;
-        private HorseFarmDataSet1TableAdapters.VetsTableAdapter vetsTableAdapter;
-        private System.Windows.Forms.BindingSource vetsBindingSource1;
-        private System.Windows.Forms.BindingSource horseCareBindingSource;
-        private HorseFarmDataSet1TableAdapters.HorseCareTableAdapter horseCareTableAdapter;
     }
 }
