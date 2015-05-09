@@ -52,8 +52,13 @@
             this.vetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schoolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.campToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.customerCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -226,7 +231,8 @@
             // 
             this.scheduleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lessonToolStripMenuItem,
-            this.horseCareToolStripMenuItem});
+            this.horseCareToolStripMenuItem,
+            this.showToolStripMenuItem});
             this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
             this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.scheduleToolStripMenuItem.Text = "Schedule";
@@ -252,7 +258,8 @@
             this.horseToolStripMenuItem,
             this.vetToolStripMenuItem,
             this.schoolToolStripMenuItem,
-            this.campToolStripMenuItem});
+            this.campToolStripMenuItem,
+            this.instructorToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.addToolStripMenuItem.Text = "Add";
@@ -307,6 +314,20 @@
             this.newCampToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.newCampToolStripMenuItem.Text = "New Camp";
             // 
+            // instructorToolStripMenuItem
+            // 
+            this.instructorToolStripMenuItem.Name = "instructorToolStripMenuItem";
+            this.instructorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.instructorToolStripMenuItem.Text = "Instructor";
+            this.instructorToolStripMenuItem.Click += new System.EventHandler(this.instructorToolStripMenuItem_Click);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click_1);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,8 +377,13 @@
         private System.Windows.Forms.ToolStripMenuItem vetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem campToolStripMenuItem;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem customerCampToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newCampToolStripMenuItem;
+=======
+        private System.Windows.Forms.ToolStripMenuItem instructorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+>>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d
     }
 }
 

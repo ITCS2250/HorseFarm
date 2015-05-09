@@ -35,8 +35,16 @@ C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\Horse
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Properties.Resources.resources
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.csproj.GenerateResource.Cache
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewHorse.resources
+<<<<<<< HEAD
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewHorse.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewInstructor.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewSchool.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewVet.resources
 C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewCustomerCamp.resources
+=======
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewCamp.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewInstructor.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewSchool.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewShow.resources
+C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewVet.resources
+>>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d

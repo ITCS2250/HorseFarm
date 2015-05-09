@@ -8,8 +8,11 @@ using System.Data.SqlClient;
 
 namespace HorseFarm
 {
+
     static class Program
     {
+        public static MainScreen mainScreen;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

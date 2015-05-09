@@ -26,5 +26,11 @@ namespace HorseFarm
         {
             this.Close();
         }
+
+        private void btnHCviewCalendar_Click(object sender, EventArgs e)
+        {
+            Program.mainScreen.radDisplayHorseCare.Checked = true;
+            Program.mainScreen.Activate();
+        }
     }
 }
