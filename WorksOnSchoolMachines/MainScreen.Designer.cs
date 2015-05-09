@@ -51,6 +51,9 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.campToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -269,7 +272,10 @@
             // 
             this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem,
-            this.horseToolStripMenuItem});
+            this.horseToolStripMenuItem,
+            this.vetToolStripMenuItem,
+            this.schoolToolStripMenuItem,
+            this.campToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.addToolStripMenuItem.Text = "Add";
@@ -287,6 +293,27 @@
             this.horseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.horseToolStripMenuItem.Text = "Horse";
             this.horseToolStripMenuItem.Click += new System.EventHandler(this.horseToolStripMenuItem_Click);
+            // 
+            // vetToolStripMenuItem
+            // 
+            this.vetToolStripMenuItem.Name = "vetToolStripMenuItem";
+            this.vetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vetToolStripMenuItem.Text = "Vet";
+            this.vetToolStripMenuItem.Click += new System.EventHandler(this.vetToolStripMenuItem_Click);
+            // 
+            // schoolToolStripMenuItem
+            // 
+            this.schoolToolStripMenuItem.Name = "schoolToolStripMenuItem";
+            this.schoolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.schoolToolStripMenuItem.Text = "School";
+            this.schoolToolStripMenuItem.Click += new System.EventHandler(this.schoolToolStripMenuItem_Click);
+            // 
+            // campToolStripMenuItem
+            // 
+            this.campToolStripMenuItem.Name = "campToolStripMenuItem";
+            this.campToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.campToolStripMenuItem.Text = "Camp";
+            this.campToolStripMenuItem.Click += new System.EventHandler(this.campToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -336,6 +363,9 @@
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schoolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem campToolStripMenuItem;
     }
 }
 

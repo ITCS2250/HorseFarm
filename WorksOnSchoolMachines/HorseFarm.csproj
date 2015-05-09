@@ -61,11 +61,23 @@
     <Compile Include="horseCare.Designer.cs">
       <DependentUpon>horseCare.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewCamp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCamp.Designer.cs">
+      <DependentUpon>NewCamp.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewHorse.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewHorse.Designer.cs">
       <DependentUpon>NewHorse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewInstructor.Designer.cs">
+      <DependentUpon>NewInstructor.cs</DependentUpon>
     </Compile>
     <Compile Include="newLesson.cs">
       <SubType>Form</SubType>
@@ -85,6 +97,12 @@
     <Compile Include="NewSchool.Designer.cs">
       <DependentUpon>NewSchool.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewVet.Designer.cs">
+      <DependentUpon>NewVet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainScreen.resx">
@@ -93,8 +111,14 @@
     <EmbeddedResource Include="horseCare.resx">
       <DependentUpon>horseCare.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewCamp.resx">
+      <DependentUpon>NewCamp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewHorse.resx">
       <DependentUpon>NewHorse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewInstructor.resx">
+      <DependentUpon>NewInstructor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newLesson.resx">
       <DependentUpon>newLesson.cs</DependentUpon>
@@ -104,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewSchool.resx">
       <DependentUpon>NewSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewVet.resx">
+      <DependentUpon>NewVet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

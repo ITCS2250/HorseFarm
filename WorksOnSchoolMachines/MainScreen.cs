@@ -46,5 +46,23 @@ namespace HorseFarm
             var form = new NewHorse();
             form.Show();
         }
+
+        private void schoolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewSchool();
+            form.Show();
+        }
+
+        private void vetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewVet();
+            form.Show();
+        }
+
+        private void campToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewCamp();
+            form.Show();
+        }
     }
 }
