@@ -54,6 +54,8 @@
             this.vetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schoolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.campToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -249,7 +251,8 @@
             // 
             this.scheduleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lessonToolStripMenuItem,
-            this.horseCareToolStripMenuItem});
+            this.horseCareToolStripMenuItem,
+            this.showToolStripMenuItem});
             this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
             this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.scheduleToolStripMenuItem.Text = "Schedule";
@@ -275,7 +278,8 @@
             this.horseToolStripMenuItem,
             this.vetToolStripMenuItem,
             this.schoolToolStripMenuItem,
-            this.campToolStripMenuItem});
+            this.campToolStripMenuItem,
+            this.instructorToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.addToolStripMenuItem.Text = "Add";
@@ -314,6 +318,20 @@
             this.campToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.campToolStripMenuItem.Text = "Camp";
             this.campToolStripMenuItem.Click += new System.EventHandler(this.campToolStripMenuItem_Click);
+            // 
+            // instructorToolStripMenuItem
+            // 
+            this.instructorToolStripMenuItem.Name = "instructorToolStripMenuItem";
+            this.instructorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.instructorToolStripMenuItem.Text = "Instructor";
+            this.instructorToolStripMenuItem.Click += new System.EventHandler(this.instructorToolStripMenuItem_Click);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click_1);
             // 
             // MainScreen
             // 
@@ -366,6 +384,8 @@
         private System.Windows.Forms.ToolStripMenuItem vetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem campToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem instructorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
     }
 }
 

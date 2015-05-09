@@ -42,13 +42,13 @@
             this.txtNewLessonClass = new System.Windows.Forms.TextBox();
             this.dateNewLessonDate = new System.Windows.Forms.DateTimePicker();
             this.txtLessonPrior = new System.Windows.Forms.TextBox();
-            this.txtExperienceOfClass = new System.Windows.Forms.TextBox();
             this.txtTypeOfClass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNewLessonTime = new System.Windows.Forms.TextBox();
             this.btnPrintReciept = new System.Windows.Forms.Button();
             this.cboNewLessonInstructor = new System.Windows.Forms.ComboBox();
             this.StudentCbo = new System.Windows.Forms.ComboBox();
+            this.cboLessonExperience = new System.Windows.Forms.ComboBox();
             classLabel = new System.Windows.Forms.Label();
             instructionLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
@@ -179,13 +179,6 @@
             this.txtLessonPrior.Size = new System.Drawing.Size(200, 20);
             this.txtLessonPrior.TabIndex = 49;
             // 
-            // txtExperienceOfClass
-            // 
-            this.txtExperienceOfClass.Location = new System.Drawing.Point(144, 211);
-            this.txtExperienceOfClass.Name = "txtExperienceOfClass";
-            this.txtExperienceOfClass.Size = new System.Drawing.Size(200, 20);
-            this.txtExperienceOfClass.TabIndex = 51;
-            // 
             // txtTypeOfClass
             // 
             this.txtTypeOfClass.Location = new System.Drawing.Point(144, 237);
@@ -235,11 +228,20 @@
             this.StudentCbo.Size = new System.Drawing.Size(200, 21);
             this.StudentCbo.TabIndex = 64;
             // 
+            // cboLessonExperience
+            // 
+            this.cboLessonExperience.FormattingEnabled = true;
+            this.cboLessonExperience.Location = new System.Drawing.Point(144, 211);
+            this.cboLessonExperience.Name = "cboLessonExperience";
+            this.cboLessonExperience.Size = new System.Drawing.Size(200, 21);
+            this.cboLessonExperience.TabIndex = 65;
+            // 
             // newLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 324);
+            this.Controls.Add(this.cboLessonExperience);
             this.Controls.Add(this.StudentCbo);
             this.Controls.Add(this.cboNewLessonInstructor);
             this.Controls.Add(this.btnPrintReciept);
@@ -258,7 +260,6 @@
             this.Controls.Add(lessPriorLabel);
             this.Controls.Add(this.txtLessonPrior);
             this.Controls.Add(expereanceOfClassLabel);
-            this.Controls.Add(this.txtExperienceOfClass);
             this.Controls.Add(kindLabel);
             this.Controls.Add(this.txtTypeOfClass);
             this.Name = "newLesson";
@@ -278,7 +279,6 @@
         private System.Windows.Forms.TextBox txtNewLessonClass;
         private System.Windows.Forms.DateTimePicker dateNewLessonDate;
         private System.Windows.Forms.TextBox txtLessonPrior;
-        private System.Windows.Forms.TextBox txtExperienceOfClass;
         private System.Windows.Forms.TextBox txtTypeOfClass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNewLessonTime;
@@ -286,5 +286,6 @@
         private System.Windows.Forms.ComboBox cboNewLessonInstructor;
         private System.Windows.Forms.ComboBox cboNewLessonStudent;
         private System.Windows.Forms.ComboBox StudentCbo;
+        private System.Windows.Forms.ComboBox cboLessonExperience;
     }
 }

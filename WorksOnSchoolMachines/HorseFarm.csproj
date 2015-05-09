@@ -97,6 +97,12 @@
     <Compile Include="NewSchool.Designer.cs">
       <DependentUpon>NewSchool.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewShow.Designer.cs">
+      <DependentUpon>NewShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewVet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewSchool.resx">
       <DependentUpon>NewSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewShow.resx">
+      <DependentUpon>NewShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewVet.resx">
       <DependentUpon>NewVet.cs</DependentUpon>

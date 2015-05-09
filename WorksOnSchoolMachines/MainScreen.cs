@@ -64,5 +64,28 @@ namespace HorseFarm
             var form = new NewCamp();
             form.Show();
         }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void instructorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewInstructor();
+            form.Show();
+        }
+
+        private void lessonToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var form = new newLesson();
+            form.Show();
+        }
+
+        private void showToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var form = new NewShow();
+            form.Show();
+        }
     }
 }

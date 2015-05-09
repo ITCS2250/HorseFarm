@@ -20,7 +20,10 @@ namespace HorseFarm
 
         private void newRider_Load(object sender, EventArgs e)
         {
-
+            txtZip.MaxLength = 10;
+            txtCellPhone.MaxLength = 15;
+            txtHomePhone.MaxLength = 15;
+            txtHomePhone.MaxLength = 15;
         }
 
         private void btnNewRiderSubmit_Click(object sender, EventArgs e)
