@@ -61,6 +61,12 @@
     <Compile Include="horseCare.Designer.cs">
       <DependentUpon>horseCare.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewHorse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewHorse.Designer.cs">
+      <DependentUpon>NewHorse.cs</DependentUpon>
+    </Compile>
     <Compile Include="newLesson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     <Compile Include="newRider.Designer.cs">
       <DependentUpon>newRider.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSchool.Designer.cs">
+      <DependentUpon>NewSchool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainScreen.resx">
@@ -81,11 +93,17 @@
     <EmbeddedResource Include="horseCare.resx">
       <DependentUpon>horseCare.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewHorse.resx">
+      <DependentUpon>NewHorse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="newLesson.resx">
       <DependentUpon>newLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newRider.resx">
       <DependentUpon>newRider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSchool.resx">
+      <DependentUpon>NewSchool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

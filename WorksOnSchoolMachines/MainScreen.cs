@@ -40,5 +40,11 @@ namespace HorseFarm
 
 
         }
+
+        private void horseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewHorse();
+            form.Show();
+        }
     }
 }

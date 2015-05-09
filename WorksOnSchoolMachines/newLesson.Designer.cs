@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label classLabel;
             System.Windows.Forms.Label instructionLabel;
             System.Windows.Forms.Label timeDateLabel;
@@ -49,6 +48,7 @@
             this.txtNewLessonTime = new System.Windows.Forms.TextBox();
             this.btnPrintReciept = new System.Windows.Forms.Button();
             this.cboNewLessonInstructor = new System.Windows.Forms.ComboBox();
+            this.StudentCbo = new System.Windows.Forms.ComboBox();
             classLabel = new System.Windows.Forms.Label();
             instructionLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
@@ -226,11 +226,21 @@
             this.cboNewLessonInstructor.Name = "cboNewLessonInstructor";
             this.cboNewLessonInstructor.Size = new System.Drawing.Size(200, 21);
             this.cboNewLessonInstructor.TabIndex = 63;
-
+            // 
+            // StudentCbo
+            // 
+            this.StudentCbo.FormattingEnabled = true;
+            this.StudentCbo.Location = new System.Drawing.Point(144, 158);
+            this.StudentCbo.Name = "StudentCbo";
+            this.StudentCbo.Size = new System.Drawing.Size(200, 21);
+            this.StudentCbo.TabIndex = 64;
+            // 
+            // newLesson
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 324);
-            this.Controls.Add(this.cboNewLessonStudent);
+            this.Controls.Add(this.StudentCbo);
             this.Controls.Add(this.cboNewLessonInstructor);
             this.Controls.Add(this.btnPrintReciept);
             this.Controls.Add(this.txtNewLessonTime);
@@ -275,5 +285,6 @@
         private System.Windows.Forms.Button btnPrintReciept;
         private System.Windows.Forms.ComboBox cboNewLessonInstructor;
         private System.Windows.Forms.ComboBox cboNewLessonStudent;
+        private System.Windows.Forms.ComboBox StudentCbo;
     }
 }

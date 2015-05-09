@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.radFindByClientName = new System.Windows.Forms.RadioButton();
             this.radFindByHorseName = new System.Windows.Forms.RadioButton();
             this.scheduleCalendar = new System.Windows.Forms.MonthCalendar();
@@ -51,6 +50,7 @@
             this.horseCareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -168,6 +168,7 @@
             // 
             // cboFindByClientName
             // 
+            this.cboFindByClientName.DisplayMember = "CustomerID";
             this.cboFindByClientName.FormattingEnabled = true;
             this.cboFindByClientName.Location = new System.Drawing.Point(6, 42);
             this.cboFindByClientName.Name = "cboFindByClientName";
@@ -267,7 +268,8 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientToolStripMenuItem});
+            this.clientToolStripMenuItem,
+            this.horseToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.addToolStripMenuItem.Text = "Add";
@@ -278,6 +280,13 @@
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientToolStripMenuItem.Text = "Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.BtnClient_Click);
+            // 
+            // horseToolStripMenuItem
+            // 
+            this.horseToolStripMenuItem.Name = "horseToolStripMenuItem";
+            this.horseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.horseToolStripMenuItem.Text = "Horse";
+            this.horseToolStripMenuItem.Click += new System.EventHandler(this.horseToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -326,6 +335,7 @@
         private System.Windows.Forms.ToolStripMenuItem horseCareToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem horseToolStripMenuItem;
     }
 }
 
