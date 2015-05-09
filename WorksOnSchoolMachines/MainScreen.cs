@@ -66,11 +66,10 @@ namespace HorseFarm
             form.Show();
         }
 
-<<<<<<< HEAD
         private void radDisplayAll_CheckedChanged(object sender, EventArgs e)
         {
+        }
 
-=======
         private void showToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -92,7 +91,6 @@ namespace HorseFarm
         {
             var form = new NewShow();
             form.Show();
->>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d
         }
     }
 }

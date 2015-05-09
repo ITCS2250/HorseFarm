@@ -52,13 +52,10 @@
             this.vetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schoolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.campToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-<<<<<<< HEAD
             this.customerCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-=======
             this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
->>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -377,13 +374,10 @@
         private System.Windows.Forms.ToolStripMenuItem vetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem campToolStripMenuItem;
-<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem customerCampToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newCampToolStripMenuItem;
-=======
         private System.Windows.Forms.ToolStripMenuItem instructorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
->>>>>>> acb6c8c4cd32f7a413ed9bb879704f84a5f4dd0d
     }
 }
 
