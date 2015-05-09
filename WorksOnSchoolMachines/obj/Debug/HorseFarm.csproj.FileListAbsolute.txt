@@ -35,3 +35,8 @@ C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\Horse
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.Properties.Resources.resources
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.csproj.GenerateResource.Cache
 C:\Users\Matt\Desktop\Git Clones\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewHorse.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewHorse.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewInstructor.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewSchool.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewVet.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\HorseFarm\WorksOnSchoolMachines\obj\Debug\HorseFarm.NewCustomerCamp.resources

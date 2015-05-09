@@ -61,11 +61,11 @@
     <Compile Include="horseCare.Designer.cs">
       <DependentUpon>horseCare.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewCamp.cs">
+    <Compile Include="NewCustomerCamp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewCamp.Designer.cs">
-      <DependentUpon>NewCamp.cs</DependentUpon>
+    <Compile Include="NewCustomerCamp.Designer.cs">
+      <DependentUpon>NewCustomerCamp.cs</DependentUpon>
     </Compile>
     <Compile Include="NewHorse.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,8 @@
     <EmbeddedResource Include="horseCare.resx">
       <DependentUpon>horseCare.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewCamp.resx">
-      <DependentUpon>NewCamp.cs</DependentUpon>
+    <EmbeddedResource Include="NewCustomerCamp.resx">
+      <DependentUpon>NewCustomerCamp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewHorse.resx">
       <DependentUpon>NewHorse.cs</DependentUpon>

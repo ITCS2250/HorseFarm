@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HorseFarm
 {
-    public partial class NewCamp : Form
+    public partial class NewCustomerCamp : Form
     {
-        public NewCamp()
+        public NewCustomerCamp()
         {
             InitializeComponent();
         }

@@ -15,6 +15,7 @@ namespace HorseFarm
         public MainScreen()
         {
             InitializeComponent();
+            Program.mainScreen = this;
         }
 
         private void BtnClient_Click(object sender, EventArgs e)
@@ -59,10 +60,15 @@ namespace HorseFarm
             form.Show();
         }
 
-        private void campToolStripMenuItem_Click(object sender, EventArgs e)
+        private void customerCampToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new NewCamp();
+            var form = new NewCustomerCamp();
             form.Show();
+        }
+
+        private void radDisplayAll_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

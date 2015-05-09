@@ -1,6 +1,6 @@
 ﻿namespace HorseFarm
 {
-    partial class NewCamp
+    partial class NewCustomerCamp
     {
         /// <summary>
         /// Required designer variable.
