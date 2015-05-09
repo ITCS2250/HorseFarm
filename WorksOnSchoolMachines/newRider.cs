@@ -89,10 +89,5 @@ namespace HorseFarm
         {
             cboNewRiderParent.Enabled = isMinorCheckBox.Checked;
         }
-
-        private void cboNewRiderParent_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

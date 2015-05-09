@@ -74,25 +74,25 @@
             // schoolLabel
             // 
             schoolLabel.AutoSize = true;
-            schoolLabel.Location = new System.Drawing.Point(11, 159);
+            schoolLabel.Location = new System.Drawing.Point(12, 159);
             schoolLabel.Name = "schoolLabel";
-            schoolLabel.Size = new System.Drawing.Size(43, 13);
+            schoolLabel.Size = new System.Drawing.Size(40, 13);
             schoolLabel.TabIndex = 46;
-            schoolLabel.Text = "School:";
+            schoolLabel.Text = "School";
             // 
             // horseLabel
             // 
             horseLabel.AutoSize = true;
             horseLabel.Location = new System.Drawing.Point(12, 185);
             horseLabel.Name = "horseLabel";
-            horseLabel.Size = new System.Drawing.Size(38, 13);
+            horseLabel.Size = new System.Drawing.Size(35, 13);
             horseLabel.TabIndex = 42;
-            horseLabel.Text = "Horse:";
+            horseLabel.Text = "Horse";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(11, 133);
+            this.label14.Location = new System.Drawing.Point(12, 133);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 30;
@@ -354,7 +354,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 58);
+            this.label6.Location = new System.Drawing.Point(8, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 71;
@@ -363,7 +363,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 32);
+            this.label7.Location = new System.Drawing.Point(8, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 72;
@@ -372,7 +372,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 84);
+            this.label8.Location = new System.Drawing.Point(8, 84);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 13);
             this.label8.TabIndex = 73;
@@ -394,7 +394,6 @@
             this.cboNewRiderParent.Name = "cboNewRiderParent";
             this.cboNewRiderParent.Size = new System.Drawing.Size(200, 21);
             this.cboNewRiderParent.TabIndex = 78;
-            this.cboNewRiderParent.SelectedIndexChanged += new System.EventHandler(this.cboNewRiderParent_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -416,7 +415,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 209);
+            this.label10.Location = new System.Drawing.Point(12, 209);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 13);
             this.label10.TabIndex = 75;
