@@ -37,8 +37,8 @@
             this.btnNewRiderSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.isMinorCheckBox = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboHorseName = new System.Windows.Forms.ComboBox();
+            this.cboSchoolName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboPrefix = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -154,25 +154,25 @@
             this.isMinorCheckBox.UseVisualStyleBackColor = true;
             this.isMinorCheckBox.CheckedChanged += new System.EventHandler(this.isMinorCheckBox_CheckedChanged);
             // 
-            // comboBox1
+            // cboHorseName
             // 
-            this.comboBox1.DisplayMember = "ID";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(77, 182);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 63;
-            this.comboBox1.ValueMember = "ID";
+            this.cboHorseName.DisplayMember = "ID";
+            this.cboHorseName.FormattingEnabled = true;
+            this.cboHorseName.Location = new System.Drawing.Point(77, 182);
+            this.cboHorseName.Name = "cboHorseName";
+            this.cboHorseName.Size = new System.Drawing.Size(200, 21);
+            this.cboHorseName.TabIndex = 63;
+            this.cboHorseName.ValueMember = "ID";
             // 
-            // comboBox2
+            // cboSchoolName
             // 
-            this.comboBox2.DisplayMember = "ID";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(77, 156);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 21);
-            this.comboBox2.TabIndex = 64;
-            this.comboBox2.ValueMember = "ID";
+            this.cboSchoolName.DisplayMember = "ID";
+            this.cboSchoolName.FormattingEnabled = true;
+            this.cboSchoolName.Location = new System.Drawing.Point(77, 156);
+            this.cboSchoolName.Name = "cboSchoolName";
+            this.cboSchoolName.Size = new System.Drawing.Size(200, 21);
+            this.cboSchoolName.TabIndex = 64;
+            this.cboSchoolName.ValueMember = "ID";
             // 
             // label1
             // 
@@ -243,8 +243,8 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.cboPrefix);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cboSchoolName);
+            this.groupBox2.Controls.Add(this.cboHorseName);
             this.groupBox2.Controls.Add(this.isMinorCheckBox);
             this.groupBox2.Controls.Add(horseLabel);
             this.groupBox2.Controls.Add(schoolLabel);
@@ -296,14 +296,14 @@
             // 
             this.txtZip.Location = new System.Drawing.Point(67, 117);
             this.txtZip.Name = "txtZip";
-            this.txtZip.Size = new System.Drawing.Size(100, 20);
+            this.txtZip.Size = new System.Drawing.Size(121, 20);
             this.txtZip.TabIndex = 72;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(67, 38);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtAddress.Size = new System.Drawing.Size(121, 20);
             this.txtAddress.TabIndex = 71;
             // 
             // groupBox1
@@ -450,8 +450,8 @@
         private System.Windows.Forms.Button btnNewRiderSubmit;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.CheckBox isMinorCheckBox;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboHorseName;
+        private System.Windows.Forms.ComboBox cboSchoolName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboPrefix;
         private System.Windows.Forms.Label label2;

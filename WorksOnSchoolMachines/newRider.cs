@@ -28,59 +28,56 @@ namespace HorseFarm
 
         private void btnNewRiderSubmit_Click(object sender, EventArgs e)
         {
-            SqlParameter[] sqlParams = new SqlParameter[16];
+            List<SqlParameter> sqlParams = new List<SqlParameter>();
 
-            sqlParams[0] = new SqlParameter("@Prefix", SqlDbType.VarChar);
-            sqlParams[0].Value = "Mr.";
+            sqlParams.Add(new SqlParameter("@Prefix", SqlDbType.VarChar));
+            sqlParams.Last().Value = cboPrefix.SelectedText;
 
-            sqlParams[1] = new SqlParameter("@FirstName", SqlDbType.VarChar);
-            sqlParams[1].Value = txtNewStudentFirstName.Text;
+            sqlParams.Add(new SqlParameter("@FirstName", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtNewStudentFirstName.Text;
 
-            sqlParams[2] = new SqlParameter("@LastName", SqlDbType.VarChar);
-            sqlParams[2].Value = txtNewStudentLastName.Text;
+            sqlParams.Add(new SqlParameter("@LastName", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtNewStudentLastName.Text;
 
-            sqlParams[3] = new SqlParameter("@Address", SqlDbType.VarChar);
-            sqlParams[3].Value = "123 Any Street";
+            sqlParams.Add(new SqlParameter("@Address", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtAddress.Text;
 
-            sqlParams[4] = new SqlParameter("@State", SqlDbType.VarChar);
-            sqlParams[4].Value = "Yugoslavia";
+            sqlParams.Add(new SqlParameter("@State", SqlDbType.VarChar));
+            sqlParams.Last().Value = cboState.SelectedValue;
 
-            sqlParams[5] = new SqlParameter("@ZIP", SqlDbType.VarChar);
-            sqlParams[5].Value = "48317";
+            sqlParams.Add(new SqlParameter("@ZIP", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtZip.Text;
 
-            sqlParams[6] = new SqlParameter("@HomePhone", SqlDbType.VarChar);
-            sqlParams[6].Value = "867-5309";
+            sqlParams.Add(new SqlParameter("@HomePhone", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtHomePhone.Text;
 
-            sqlParams[7] = new SqlParameter("@WorkPhone", SqlDbType.VarChar);
-            sqlParams[7].Value = "867-5309";
+            sqlParams.Add(new SqlParameter("@WorkPhone", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtWorkPhone.Text;
 
-            sqlParams[8] = new SqlParameter("@MobilePhone", SqlDbType.VarChar);
-            sqlParams[8].Value = "867-5309";
+            sqlParams.Add(new SqlParameter("@MobilePhone", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtCellPhone.Text;
 
-            sqlParams[9] = new SqlParameter("@Email", SqlDbType.VarChar);
-            sqlParams[9].Value = "aguy@gmail.com";
+            sqlParams.Add(new SqlParameter("@Email", SqlDbType.VarChar));
+            sqlParams.Last().Value = txtEmail.Text;
 
-            sqlParams[10] = new SqlParameter("@HorseID", SqlDbType.Int);
-            sqlParams[10].Value = 1;
+            sqlParams.Add(new SqlParameter("@HorseID", SqlDbType.Int));
+            sqlParams.Last().Value = cboHorseName.SelectedValue;
 
-            sqlParams[11] = new SqlParameter("@FirstLessonDate", SqlDbType.Date);
-            sqlParams[11].Value = dateTimeArrived.Value;
+            sqlParams.Add(new SqlParameter("@SchoolID", SqlDbType.VarChar));
+            sqlParams.Last().Value = cboSchoolName.SelectedValue;
 
-            sqlParams[12] = new SqlParameter("@SchoolID", SqlDbType.VarChar);
-            sqlParams[12].Value = 1;
+            sqlParams.Add(new SqlParameter("@SkillLevelID", SqlDbType.VarChar));
+            sqlParams.Last().Value = cboNewRiderSkillLevel.SelectedValue;
 
-            sqlParams[13] = new SqlParameter("@SkillLevelID", SqlDbType.VarChar);
-            sqlParams[13].Value = 1;
+            sqlParams.Add(new SqlParameter("@IsDependent", SqlDbType.Bit));
+            sqlParams.Last().Value = isMinorCheckBox.Checked;
 
-            sqlParams[14] = new SqlParameter("@IsDependent", SqlDbType.Bit);
-            sqlParams[14].Value = isMinorCheckBox.Checked;
-
-            sqlParams[15] = new SqlParameter("@ParentID", SqlDbType.Int);
-            sqlParams[15].Value = cboNewRiderParent.SelectedItem;
+            sqlParams.Add(new SqlParameter("@ParentID", SqlDbType.Int));
+            sqlParams.Last().Value = cboNewRiderParent.SelectedItem;
 
             // and so on
 
-            Program.ExecuteStoredProc("pAddCustomer", sqlParams);
+            Program.ExecuteStoredProc("pAddCustomer", sqlParams.ToArray<SqlParameter>());
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

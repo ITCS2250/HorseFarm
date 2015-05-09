@@ -91,21 +91,21 @@
             // 
             this.txtSchoolName.Location = new System.Drawing.Point(119, 25);
             this.txtSchoolName.Name = "txtSchoolName";
-            this.txtSchoolName.Size = new System.Drawing.Size(100, 20);
+            this.txtSchoolName.Size = new System.Drawing.Size(121, 20);
             this.txtSchoolName.TabIndex = 5;
             // 
             // txtSchoolAddress
             // 
             this.txtSchoolAddress.Location = new System.Drawing.Point(119, 49);
             this.txtSchoolAddress.Name = "txtSchoolAddress";
-            this.txtSchoolAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtSchoolAddress.Size = new System.Drawing.Size(121, 20);
             this.txtSchoolAddress.TabIndex = 6;
             // 
             // txtZip
             // 
             this.txtZip.Location = new System.Drawing.Point(119, 129);
             this.txtZip.Name = "txtZip";
-            this.txtZip.Size = new System.Drawing.Size(100, 20);
+            this.txtZip.Size = new System.Drawing.Size(121, 20);
             this.txtZip.TabIndex = 7;
             // 
             // cboCity
@@ -126,7 +126,7 @@
             // 
             // btnNewSchoolSubmit
             // 
-            this.btnNewSchoolSubmit.Location = new System.Drawing.Point(29, 191);
+            this.btnNewSchoolSubmit.Location = new System.Drawing.Point(84, 191);
             this.btnNewSchoolSubmit.Name = "btnNewSchoolSubmit";
             this.btnNewSchoolSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnNewSchoolSubmit.TabIndex = 10;
@@ -135,7 +135,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(119, 191);
+            this.btnCancel.Location = new System.Drawing.Point(165, 191);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 11;
@@ -147,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 247);
+            this.ClientSize = new System.Drawing.Size(270, 247);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnNewSchoolSubmit);
             this.Controls.Add(this.cboState);
