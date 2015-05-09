@@ -76,7 +76,7 @@ namespace HorseFarm
             sqlParams[14].Value = isMinorCheckBox.Checked;
 
             sqlParams[15] = new SqlParameter("@ParentID", SqlDbType.Int);
-            sqlParams[15].Value = parentComboBox.SelectedItem;
+            sqlParams[15].Value = cboNewRiderParent.SelectedItem;
 
             // and so on
 
@@ -90,7 +90,12 @@ namespace HorseFarm
 
         private void isMinorCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            parentComboBox.Enabled = isMinorCheckBox.Checked;
+            cboNewRiderParent.Enabled = isMinorCheckBox.Checked;
+        }
+
+        private void cboNewRiderParent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label argPerDayLabel;
-            System.Windows.Forms.Label hSCHLLabel;
-            System.Windows.Forms.Label campLabel;
-            System.Windows.Forms.Label hackLabel;
             System.Windows.Forms.Label schoolLabel;
-            System.Windows.Forms.Label arrivedLabel;
             System.Windows.Forms.Label horseLabel;
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNewStudentFirstName = new System.Windows.Forms.TextBox();
             this.txtNewStudentLastName = new System.Windows.Forms.TextBox();
-            this.txtNewStudentArgPerDay = new System.Windows.Forms.TextBox();
-            this.txtNewStudentHSCHL = new System.Windows.Forms.TextBox();
-            this.txtNewStudentCamp = new System.Windows.Forms.TextBox();
-            this.txtNewStudentHack = new System.Windows.Forms.TextBox();
             this.btnNewRiderSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dateTimeArrived = new System.Windows.Forms.DateTimePicker();
-            this.parentLabel = new System.Windows.Forms.Label();
-            this.parentComboBox = new System.Windows.Forms.ComboBox();
             this.isMinorCheckBox = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -58,40 +46,53 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cboState = new System.Windows.Forms.ComboBox();
+            this.cboCity = new System.Windows.Forms.ComboBox();
+            this.txtZip = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtWorkPhone = new System.Windows.Forms.TextBox();
+            this.txtCellPhone = new System.Windows.Forms.TextBox();
+            this.txtHomePhone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cboNewRiderSkillLevel = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.cboNewRiderParent = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtHomePhone = new System.Windows.Forms.TextBox();
-            this.txtCellPhone = new System.Windows.Forms.TextBox();
-            this.txtWorkPhone = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.txtZip = new System.Windows.Forms.TextBox();
-            this.cboCity = new System.Windows.Forms.ComboBox();
-            this.cboState = new System.Windows.Forms.ComboBox();
-            argPerDayLabel = new System.Windows.Forms.Label();
-            hSCHLLabel = new System.Windows.Forms.Label();
-            campLabel = new System.Windows.Forms.Label();
-            hackLabel = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cboNewRiderSkillLevel = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             schoolLabel = new System.Windows.Forms.Label();
-            arrivedLabel = new System.Windows.Forms.Label();
             horseLabel = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // schoolLabel
+            // 
+            schoolLabel.AutoSize = true;
+            schoolLabel.Location = new System.Drawing.Point(11, 159);
+            schoolLabel.Name = "schoolLabel";
+            schoolLabel.Size = new System.Drawing.Size(43, 13);
+            schoolLabel.TabIndex = 46;
+            schoolLabel.Text = "School:";
+            // 
+            // horseLabel
+            // 
+            horseLabel.AutoSize = true;
+            horseLabel.Location = new System.Drawing.Point(12, 185);
+            horseLabel.Name = "horseLabel";
+            horseLabel.Size = new System.Drawing.Size(38, 13);
+            horseLabel.TabIndex = 42;
+            horseLabel.Text = "Horse:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(11, 150);
+            this.label14.Location = new System.Drawing.Point(11, 133);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 30;
@@ -100,7 +101,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(12, 125);
+            this.label13.Location = new System.Drawing.Point(12, 108);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 13);
             this.label13.TabIndex = 31;
@@ -108,103 +109,21 @@
             // 
             // txtNewStudentFirstName
             // 
-            this.txtNewStudentFirstName.Location = new System.Drawing.Point(77, 122);
+            this.txtNewStudentFirstName.Location = new System.Drawing.Point(77, 105);
             this.txtNewStudentFirstName.Name = "txtNewStudentFirstName";
             this.txtNewStudentFirstName.Size = new System.Drawing.Size(200, 20);
             this.txtNewStudentFirstName.TabIndex = 32;
             // 
             // txtNewStudentLastName
             // 
-            this.txtNewStudentLastName.Location = new System.Drawing.Point(77, 147);
+            this.txtNewStudentLastName.Location = new System.Drawing.Point(77, 130);
             this.txtNewStudentLastName.Name = "txtNewStudentLastName";
             this.txtNewStudentLastName.Size = new System.Drawing.Size(200, 20);
             this.txtNewStudentLastName.TabIndex = 33;
             // 
-            // txtNewStudentArgPerDay
-            // 
-            this.txtNewStudentArgPerDay.Location = new System.Drawing.Point(77, 378);
-            this.txtNewStudentArgPerDay.Name = "txtNewStudentArgPerDay";
-            this.txtNewStudentArgPerDay.Size = new System.Drawing.Size(212, 20);
-            this.txtNewStudentArgPerDay.TabIndex = 57;
-            // 
-            // argPerDayLabel
-            // 
-            argPerDayLabel.AutoSize = true;
-            argPerDayLabel.Location = new System.Drawing.Point(4, 381);
-            argPerDayLabel.Name = "argPerDayLabel";
-            argPerDayLabel.Size = new System.Drawing.Size(67, 13);
-            argPerDayLabel.TabIndex = 56;
-            argPerDayLabel.Text = "Arg Per Day:";
-            // 
-            // txtNewStudentHSCHL
-            // 
-            this.txtNewStudentHSCHL.Location = new System.Drawing.Point(77, 352);
-            this.txtNewStudentHSCHL.Name = "txtNewStudentHSCHL";
-            this.txtNewStudentHSCHL.Size = new System.Drawing.Size(212, 20);
-            this.txtNewStudentHSCHL.TabIndex = 55;
-            // 
-            // hSCHLLabel
-            // 
-            hSCHLLabel.AutoSize = true;
-            hSCHLLabel.Location = new System.Drawing.Point(4, 355);
-            hSCHLLabel.Name = "hSCHLLabel";
-            hSCHLLabel.Size = new System.Drawing.Size(46, 13);
-            hSCHLLabel.TabIndex = 54;
-            hSCHLLabel.Text = "HSCHL:";
-            // 
-            // txtNewStudentCamp
-            // 
-            this.txtNewStudentCamp.Location = new System.Drawing.Point(77, 326);
-            this.txtNewStudentCamp.Name = "txtNewStudentCamp";
-            this.txtNewStudentCamp.Size = new System.Drawing.Size(212, 20);
-            this.txtNewStudentCamp.TabIndex = 53;
-            // 
-            // campLabel
-            // 
-            campLabel.AutoSize = true;
-            campLabel.Location = new System.Drawing.Point(4, 329);
-            campLabel.Name = "campLabel";
-            campLabel.Size = new System.Drawing.Size(37, 13);
-            campLabel.TabIndex = 52;
-            campLabel.Text = "Camp:";
-            // 
-            // txtNewStudentHack
-            // 
-            this.txtNewStudentHack.Location = new System.Drawing.Point(77, 410);
-            this.txtNewStudentHack.Name = "txtNewStudentHack";
-            this.txtNewStudentHack.Size = new System.Drawing.Size(212, 20);
-            this.txtNewStudentHack.TabIndex = 51;
-            // 
-            // hackLabel
-            // 
-            hackLabel.AutoSize = true;
-            hackLabel.Location = new System.Drawing.Point(5, 410);
-            hackLabel.Name = "hackLabel";
-            hackLabel.Size = new System.Drawing.Size(36, 13);
-            hackLabel.TabIndex = 50;
-            hackLabel.Text = "Hack:";
-            // 
-            // schoolLabel
-            // 
-            schoolLabel.AutoSize = true;
-            schoolLabel.Location = new System.Drawing.Point(11, 176);
-            schoolLabel.Name = "schoolLabel";
-            schoolLabel.Size = new System.Drawing.Size(43, 13);
-            schoolLabel.TabIndex = 46;
-            schoolLabel.Text = "School:";
-            // 
-            // arrivedLabel
-            // 
-            arrivedLabel.AutoSize = true;
-            arrivedLabel.Location = new System.Drawing.Point(4, 306);
-            arrivedLabel.Name = "arrivedLabel";
-            arrivedLabel.Size = new System.Drawing.Size(63, 13);
-            arrivedLabel.TabIndex = 44;
-            arrivedLabel.Text = "First Lesson";
-            // 
             // btnNewRiderSubmit
             // 
-            this.btnNewRiderSubmit.Location = new System.Drawing.Point(422, 405);
+            this.btnNewRiderSubmit.Location = new System.Drawing.Point(121, 266);
             this.btnNewRiderSubmit.Name = "btnNewRiderSubmit";
             this.btnNewRiderSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnNewRiderSubmit.TabIndex = 9;
@@ -212,18 +131,9 @@
             this.btnNewRiderSubmit.UseVisualStyleBackColor = true;
             this.btnNewRiderSubmit.Click += new System.EventHandler(this.btnNewRiderSubmit_Click);
             // 
-            // horseLabel
-            // 
-            horseLabel.AutoSize = true;
-            horseLabel.Location = new System.Drawing.Point(5, 255);
-            horseLabel.Name = "horseLabel";
-            horseLabel.Size = new System.Drawing.Size(38, 13);
-            horseLabel.TabIndex = 42;
-            horseLabel.Text = "Horse:";
-            // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(503, 405);
+            this.btnCancel.Location = new System.Drawing.Point(202, 266);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 10;
@@ -231,38 +141,12 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dateTimeArrived
-            // 
-            this.dateTimeArrived.Location = new System.Drawing.Point(77, 300);
-            this.dateTimeArrived.Name = "dateTimeArrived";
-            this.dateTimeArrived.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeArrived.TabIndex = 58;
-            // 
-            // parentLabel
-            // 
-            this.parentLabel.AutoSize = true;
-            this.parentLabel.Location = new System.Drawing.Point(12, 72);
-            this.parentLabel.Name = "parentLabel";
-            this.parentLabel.Size = new System.Drawing.Size(51, 13);
-            this.parentLabel.TabIndex = 59;
-            this.parentLabel.Text = "Customer";
-            // 
-            // parentComboBox
-            // 
-            this.parentComboBox.DisplayMember = "CustomerID";
-            this.parentComboBox.FormattingEnabled = true;
-            this.parentComboBox.Location = new System.Drawing.Point(77, 69);
-            this.parentComboBox.Name = "parentComboBox";
-            this.parentComboBox.Size = new System.Drawing.Size(200, 21);
-            this.parentComboBox.TabIndex = 60;
-            this.parentComboBox.ValueMember = "CustomerID";
-            // 
             // isMinorCheckBox
             // 
             this.isMinorCheckBox.AutoSize = true;
             this.isMinorCheckBox.Checked = true;
             this.isMinorCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.isMinorCheckBox.Location = new System.Drawing.Point(15, 19);
+            this.isMinorCheckBox.Location = new System.Drawing.Point(15, 29);
             this.isMinorCheckBox.Name = "isMinorCheckBox";
             this.isMinorCheckBox.Size = new System.Drawing.Size(63, 17);
             this.isMinorCheckBox.TabIndex = 62;
@@ -274,7 +158,7 @@
             // 
             this.comboBox1.DisplayMember = "ID";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(77, 246);
+            this.comboBox1.Location = new System.Drawing.Point(77, 182);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 63;
@@ -284,7 +168,7 @@
             // 
             this.comboBox2.DisplayMember = "ID";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(77, 173);
+            this.comboBox2.Location = new System.Drawing.Point(77, 156);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(200, 21);
             this.comboBox2.TabIndex = 64;
@@ -293,7 +177,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(12, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 65;
@@ -306,7 +190,7 @@
             "Mr.",
             "Ms.",
             "Mrs."});
-            this.cboPrefix.Location = new System.Drawing.Point(77, 93);
+            this.cboPrefix.Location = new System.Drawing.Point(77, 76);
             this.cboPrefix.Name = "cboPrefix";
             this.cboPrefix.Size = new System.Drawing.Size(121, 21);
             this.cboPrefix.TabIndex = 66;
@@ -362,30 +246,110 @@
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.isMinorCheckBox);
-            this.groupBox2.Controls.Add(this.parentComboBox);
-            this.groupBox2.Controls.Add(this.parentLabel);
-            this.groupBox2.Controls.Add(this.dateTimeArrived);
             this.groupBox2.Controls.Add(horseLabel);
-            this.groupBox2.Controls.Add(arrivedLabel);
             this.groupBox2.Controls.Add(schoolLabel);
-            this.groupBox2.Controls.Add(hackLabel);
-            this.groupBox2.Controls.Add(this.txtNewStudentHack);
-            this.groupBox2.Controls.Add(campLabel);
-            this.groupBox2.Controls.Add(this.txtNewStudentCamp);
-            this.groupBox2.Controls.Add(hSCHLLabel);
-            this.groupBox2.Controls.Add(this.txtNewStudentHSCHL);
-            this.groupBox2.Controls.Add(argPerDayLabel);
-            this.groupBox2.Controls.Add(this.txtNewStudentArgPerDay);
             this.groupBox2.Controls.Add(this.txtNewStudentLastName);
             this.groupBox2.Controls.Add(this.txtNewStudentFirstName);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(609, 449);
+            this.groupBox2.Size = new System.Drawing.Size(554, 350);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cboState);
+            this.groupBox3.Controls.Add(this.cboCity);
+            this.groupBox3.Controls.Add(this.txtZip);
+            this.groupBox3.Controls.Add(this.txtAddress);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(332, 175);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 149);
+            this.groupBox3.TabIndex = 80;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Home Information";
+            // 
+            // cboState
+            // 
+            this.cboState.FormattingEnabled = true;
+            this.cboState.Location = new System.Drawing.Point(67, 91);
+            this.cboState.Name = "cboState";
+            this.cboState.Size = new System.Drawing.Size(121, 21);
+            this.cboState.TabIndex = 74;
+            // 
+            // cboCity
+            // 
+            this.cboCity.FormattingEnabled = true;
+            this.cboCity.Location = new System.Drawing.Point(67, 64);
+            this.cboCity.Name = "cboCity";
+            this.cboCity.Size = new System.Drawing.Size(121, 21);
+            this.cboCity.TabIndex = 73;
+            // 
+            // txtZip
+            // 
+            this.txtZip.Location = new System.Drawing.Point(67, 117);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(100, 20);
+            this.txtZip.TabIndex = 72;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(67, 38);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtAddress.TabIndex = 71;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtWorkPhone);
+            this.groupBox1.Controls.Add(this.txtCellPhone);
+            this.groupBox1.Controls.Add(this.txtHomePhone);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Location = new System.Drawing.Point(332, 29);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 138);
+            this.groupBox1.TabIndex = 79;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Contact Information";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(90, 107);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 78;
+            // 
+            // txtWorkPhone
+            // 
+            this.txtWorkPhone.Location = new System.Drawing.Point(90, 81);
+            this.txtWorkPhone.Name = "txtWorkPhone";
+            this.txtWorkPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtWorkPhone.TabIndex = 77;
+            // 
+            // txtCellPhone
+            // 
+            this.txtCellPhone.Location = new System.Drawing.Point(90, 29);
+            this.txtCellPhone.Name = "txtCellPhone";
+            this.txtCellPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtCellPhone.TabIndex = 76;
+            // 
+            // txtHomePhone
+            // 
+            this.txtHomePhone.Location = new System.Drawing.Point(90, 55);
+            this.txtHomePhone.Name = "txtHomePhone";
+            this.txtHomePhone.Size = new System.Drawing.Size(100, 20);
+            this.txtHomePhone.TabIndex = 75;
             // 
             // label6
             // 
@@ -423,147 +387,56 @@
             this.label9.TabIndex = 74;
             this.label9.Text = "Email";
             // 
-            // label10
+            // cboNewRiderParent
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 279);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
-            this.label10.TabIndex = 75;
-            this.label10.Text = "Skill Level";
-            // 
-            // cboNewRiderSkillLevel
-            // 
-            this.cboNewRiderSkillLevel.FormattingEnabled = true;
-            this.cboNewRiderSkillLevel.Location = new System.Drawing.Point(77, 273);
-            this.cboNewRiderSkillLevel.Name = "cboNewRiderSkillLevel";
-            this.cboNewRiderSkillLevel.Size = new System.Drawing.Size(200, 21);
-            this.cboNewRiderSkillLevel.TabIndex = 76;
+            this.cboNewRiderParent.FormattingEnabled = true;
+            this.cboNewRiderParent.Location = new System.Drawing.Point(77, 49);
+            this.cboNewRiderParent.Name = "cboNewRiderParent";
+            this.cboNewRiderParent.Size = new System.Drawing.Size(200, 21);
+            this.cboNewRiderParent.TabIndex = 78;
+            this.cboNewRiderParent.SelectedIndexChanged += new System.EventHandler(this.cboNewRiderParent_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(11, 45);
+            this.label11.Location = new System.Drawing.Point(11, 55);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(38, 13);
             this.label11.TabIndex = 77;
             this.label11.Text = "Parent";
             // 
-            // cboNewRiderParent
+            // cboNewRiderSkillLevel
             // 
-            this.cboNewRiderParent.FormattingEnabled = true;
-            this.cboNewRiderParent.Location = new System.Drawing.Point(77, 42);
-            this.cboNewRiderParent.Name = "cboNewRiderParent";
-            this.cboNewRiderParent.Size = new System.Drawing.Size(200, 21);
-            this.cboNewRiderParent.TabIndex = 78;
+            this.cboNewRiderSkillLevel.FormattingEnabled = true;
+            this.cboNewRiderSkillLevel.Location = new System.Drawing.Point(77, 209);
+            this.cboNewRiderSkillLevel.Name = "cboNewRiderSkillLevel";
+            this.cboNewRiderSkillLevel.Size = new System.Drawing.Size(200, 21);
+            this.cboNewRiderSkillLevel.TabIndex = 76;
             // 
-            // groupBox1
+            // label10
             // 
-            this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtWorkPhone);
-            this.groupBox1.Controls.Add(this.txtCellPhone);
-            this.groupBox1.Controls.Add(this.txtHomePhone);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(332, 29);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 138);
-            this.groupBox1.TabIndex = 79;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Contact Information";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.cboState);
-            this.groupBox3.Controls.Add(this.cboCity);
-            this.groupBox3.Controls.Add(this.txtZip);
-            this.groupBox3.Controls.Add(this.txtAddress);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(332, 219);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 149);
-            this.groupBox3.TabIndex = 80;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Home Information";
-            // 
-            // txtHomePhone
-            // 
-            this.txtHomePhone.Location = new System.Drawing.Point(90, 55);
-            this.txtHomePhone.Name = "txtHomePhone";
-            this.txtHomePhone.Size = new System.Drawing.Size(100, 20);
-            this.txtHomePhone.TabIndex = 75;
-            // 
-            // txtCellPhone
-            // 
-            this.txtCellPhone.Location = new System.Drawing.Point(90, 29);
-            this.txtCellPhone.Name = "txtCellPhone";
-            this.txtCellPhone.Size = new System.Drawing.Size(100, 20);
-            this.txtCellPhone.TabIndex = 76;
-            // 
-            // txtWorkPhone
-            // 
-            this.txtWorkPhone.Location = new System.Drawing.Point(90, 81);
-            this.txtWorkPhone.Name = "txtWorkPhone";
-            this.txtWorkPhone.Size = new System.Drawing.Size(100, 20);
-            this.txtWorkPhone.TabIndex = 77;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(90, 107);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtEmail.TabIndex = 78;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(67, 38);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(100, 20);
-            this.txtAddress.TabIndex = 71;
-            // 
-            // txtZip
-            // 
-            this.txtZip.Location = new System.Drawing.Point(67, 117);
-            this.txtZip.Name = "txtZip";
-            this.txtZip.Size = new System.Drawing.Size(100, 20);
-            this.txtZip.TabIndex = 72;
-            // 
-            // cboCity
-            // 
-            this.cboCity.FormattingEnabled = true;
-            this.cboCity.Location = new System.Drawing.Point(67, 64);
-            this.cboCity.Name = "cboCity";
-            this.cboCity.Size = new System.Drawing.Size(121, 21);
-            this.cboCity.TabIndex = 73;
-            // 
-            // cboState
-            // 
-            this.cboState.FormattingEnabled = true;
-            this.cboState.Location = new System.Drawing.Point(67, 91);
-            this.cboState.Name = "cboState";
-            this.cboState.Size = new System.Drawing.Size(121, 21);
-            this.cboState.TabIndex = 74;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 209);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.TabIndex = 75;
+            this.label10.Text = "Skill Level";
             // 
             // newRider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 491);
+            this.ClientSize = new System.Drawing.Size(580, 374);
             this.Controls.Add(this.groupBox2);
             this.Name = "newRider";
             this.Text = "New Rider";
             this.Load += new System.EventHandler(this.newRider_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -574,15 +447,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtNewStudentFirstName;
         private System.Windows.Forms.TextBox txtNewStudentLastName;
-        private System.Windows.Forms.TextBox txtNewStudentArgPerDay;
-        private System.Windows.Forms.TextBox txtNewStudentHSCHL;
-        private System.Windows.Forms.TextBox txtNewStudentCamp;
-        private System.Windows.Forms.TextBox txtNewStudentHack;
         private System.Windows.Forms.Button btnNewRiderSubmit;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DateTimePicker dateTimeArrived;
-        private System.Windows.Forms.Label parentLabel;
-        private System.Windows.Forms.ComboBox parentComboBox;
         private System.Windows.Forms.CheckBox isMinorCheckBox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
