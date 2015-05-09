@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HorseFarm
 {
-    public partial class NewHorse : Form
+    public partial class NewCamp : Form
     {
-        public NewHorse()
+        public NewCamp()
         {
             InitializeComponent();
         }
@@ -20,21 +20,6 @@ namespace HorseFarm
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnNewHorseSubmit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NewHorseNametxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

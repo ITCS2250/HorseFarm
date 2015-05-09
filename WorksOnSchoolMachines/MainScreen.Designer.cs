@@ -46,6 +46,7 @@
             this.scheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lessonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horseCareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +56,6 @@
             this.customerCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCampToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -113,7 +113,6 @@
             this.radDisplayAll.TabStop = true;
             this.radDisplayAll.Text = "Display All";
             this.radDisplayAll.UseVisualStyleBackColor = true;
-            this.radDisplayAll.CheckedChanged += new System.EventHandler(this.radDisplayAll_CheckedChanged);
             // 
             // radDisplayHorseCare
             // 
@@ -237,16 +236,23 @@
             // lessonToolStripMenuItem
             // 
             this.lessonToolStripMenuItem.Name = "lessonToolStripMenuItem";
-            this.lessonToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.lessonToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.lessonToolStripMenuItem.Text = "Lesson";
             this.lessonToolStripMenuItem.Click += new System.EventHandler(this.btnLesson_Click);
             // 
             // horseCareToolStripMenuItem
             // 
             this.horseCareToolStripMenuItem.Name = "horseCareToolStripMenuItem";
-            this.horseCareToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.horseCareToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.horseCareToolStripMenuItem.Text = "Horse Care";
             this.horseCareToolStripMenuItem.Click += new System.EventHandler(this.btnHorse_Click);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click_1);
             // 
             // addToolStripMenuItem
             // 
@@ -264,28 +270,28 @@
             // clientToolStripMenuItem
             // 
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientToolStripMenuItem.Text = "Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.BtnClient_Click);
             // 
             // horseToolStripMenuItem
             // 
             this.horseToolStripMenuItem.Name = "horseToolStripMenuItem";
-            this.horseToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.horseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.horseToolStripMenuItem.Text = "Horse";
             this.horseToolStripMenuItem.Click += new System.EventHandler(this.horseToolStripMenuItem_Click);
             // 
             // vetToolStripMenuItem
             // 
             this.vetToolStripMenuItem.Name = "vetToolStripMenuItem";
-            this.vetToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.vetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vetToolStripMenuItem.Text = "Vet";
             this.vetToolStripMenuItem.Click += new System.EventHandler(this.vetToolStripMenuItem_Click);
             // 
             // schoolToolStripMenuItem
             // 
             this.schoolToolStripMenuItem.Name = "schoolToolStripMenuItem";
-            this.schoolToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.schoolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.schoolToolStripMenuItem.Text = "School";
             this.schoolToolStripMenuItem.Click += new System.EventHandler(this.schoolToolStripMenuItem_Click);
             // 
@@ -295,7 +301,7 @@
             this.customerCampToolStripMenuItem,
             this.newCampToolStripMenuItem});
             this.campToolStripMenuItem.Name = "campToolStripMenuItem";
-            this.campToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.campToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.campToolStripMenuItem.Text = "Camp";
             // 
             // customerCampToolStripMenuItem
@@ -310,6 +316,7 @@
             this.newCampToolStripMenuItem.Name = "newCampToolStripMenuItem";
             this.newCampToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.newCampToolStripMenuItem.Text = "New Camp";
+            this.newCampToolStripMenuItem.Click += new System.EventHandler(this.newCampToolStripMenuItem_Click);
             // 
             // instructorToolStripMenuItem
             // 
@@ -317,13 +324,6 @@
             this.instructorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.instructorToolStripMenuItem.Text = "Instructor";
             this.instructorToolStripMenuItem.Click += new System.EventHandler(this.instructorToolStripMenuItem_Click);
-            // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.showToolStripMenuItem.Text = "Show";
-            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click_1);
             // 
             // MainScreen
             // 
@@ -335,7 +335,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainScreen";
             this.Text = "Horse Farm";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);

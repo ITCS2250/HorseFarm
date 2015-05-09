@@ -31,9 +31,6 @@
             System.Windows.Forms.Label classLabel;
             System.Windows.Forms.Label instructionLabel;
             System.Windows.Forms.Label timeDateLabel;
-            System.Windows.Forms.Label studentLabel;
-            System.Windows.Forms.Label lessPriorLabel;
-            System.Windows.Forms.Label expereanceOfClassLabel;
             System.Windows.Forms.Label kindLabel;
             this.label1 = new System.Windows.Forms.Label();
             this.cboClientName = new System.Windows.Forms.ComboBox();
@@ -41,20 +38,14 @@
             this.btnNewLessonSubmit = new System.Windows.Forms.Button();
             this.txtNewLessonClass = new System.Windows.Forms.TextBox();
             this.dateNewLessonDate = new System.Windows.Forms.DateTimePicker();
-            this.txtLessonPrior = new System.Windows.Forms.TextBox();
             this.txtTypeOfClass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNewLessonTime = new System.Windows.Forms.TextBox();
             this.btnPrintReciept = new System.Windows.Forms.Button();
             this.cboNewLessonInstructor = new System.Windows.Forms.ComboBox();
-            this.StudentCbo = new System.Windows.Forms.ComboBox();
-            this.cboLessonExperience = new System.Windows.Forms.ComboBox();
             classLabel = new System.Windows.Forms.Label();
             instructionLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
-            studentLabel = new System.Windows.Forms.Label();
-            lessPriorLabel = new System.Windows.Forms.Label();
-            expereanceOfClassLabel = new System.Windows.Forms.Label();
             kindLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -85,37 +76,10 @@
             timeDateLabel.TabIndex = 44;
             timeDateLabel.Text = "Date:";
             // 
-            // studentLabel
-            // 
-            studentLabel.AutoSize = true;
-            studentLabel.Location = new System.Drawing.Point(29, 162);
-            studentLabel.Name = "studentLabel";
-            studentLabel.Size = new System.Drawing.Size(47, 13);
-            studentLabel.TabIndex = 46;
-            studentLabel.Text = "Student:";
-            // 
-            // lessPriorLabel
-            // 
-            lessPriorLabel.AutoSize = true;
-            lessPriorLabel.Location = new System.Drawing.Point(29, 188);
-            lessPriorLabel.Name = "lessPriorLabel";
-            lessPriorLabel.Size = new System.Drawing.Size(68, 13);
-            lessPriorLabel.TabIndex = 48;
-            lessPriorLabel.Text = "Lesson Prior:";
-            // 
-            // expereanceOfClassLabel
-            // 
-            expereanceOfClassLabel.AutoSize = true;
-            expereanceOfClassLabel.Location = new System.Drawing.Point(29, 214);
-            expereanceOfClassLabel.Name = "expereanceOfClassLabel";
-            expereanceOfClassLabel.Size = new System.Drawing.Size(105, 13);
-            expereanceOfClassLabel.TabIndex = 50;
-            expereanceOfClassLabel.Text = "Experience Of Class:";
-            // 
             // kindLabel
             // 
             kindLabel.AutoSize = true;
-            kindLabel.Location = new System.Drawing.Point(29, 240);
+            kindLabel.Location = new System.Drawing.Point(29, 164);
             kindLabel.Name = "kindLabel";
             kindLabel.Size = new System.Drawing.Size(74, 13);
             kindLabel.TabIndex = 54;
@@ -140,7 +104,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(237, 283);
+            this.btnCancel.Location = new System.Drawing.Point(239, 187);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -151,7 +115,7 @@
             // 
             // btnNewLessonSubmit
             // 
-            this.btnNewLessonSubmit.Location = new System.Drawing.Point(32, 283);
+            this.btnNewLessonSubmit.Location = new System.Drawing.Point(34, 187);
             this.btnNewLessonSubmit.Name = "btnNewLessonSubmit";
             this.btnNewLessonSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnNewLessonSubmit.TabIndex = 56;
@@ -172,16 +136,9 @@
             this.dateNewLessonDate.Size = new System.Drawing.Size(200, 20);
             this.dateNewLessonDate.TabIndex = 45;
             // 
-            // txtLessonPrior
-            // 
-            this.txtLessonPrior.Location = new System.Drawing.Point(144, 185);
-            this.txtLessonPrior.Name = "txtLessonPrior";
-            this.txtLessonPrior.Size = new System.Drawing.Size(200, 20);
-            this.txtLessonPrior.TabIndex = 49;
-            // 
             // txtTypeOfClass
             // 
-            this.txtTypeOfClass.Location = new System.Drawing.Point(144, 237);
+            this.txtTypeOfClass.Location = new System.Drawing.Point(144, 161);
             this.txtTypeOfClass.Name = "txtTypeOfClass";
             this.txtTypeOfClass.Size = new System.Drawing.Size(200, 20);
             this.txtTypeOfClass.TabIndex = 55;
@@ -205,7 +162,7 @@
             // 
             // btnPrintReciept
             // 
-            this.btnPrintReciept.Location = new System.Drawing.Point(132, 283);
+            this.btnPrintReciept.Location = new System.Drawing.Point(134, 187);
             this.btnPrintReciept.Name = "btnPrintReciept";
             this.btnPrintReciept.Size = new System.Drawing.Size(79, 23);
             this.btnPrintReciept.TabIndex = 62;
@@ -220,29 +177,11 @@
             this.cboNewLessonInstructor.Size = new System.Drawing.Size(200, 21);
             this.cboNewLessonInstructor.TabIndex = 63;
             // 
-            // StudentCbo
-            // 
-            this.StudentCbo.FormattingEnabled = true;
-            this.StudentCbo.Location = new System.Drawing.Point(144, 158);
-            this.StudentCbo.Name = "StudentCbo";
-            this.StudentCbo.Size = new System.Drawing.Size(200, 21);
-            this.StudentCbo.TabIndex = 64;
-            // 
-            // cboLessonExperience
-            // 
-            this.cboLessonExperience.FormattingEnabled = true;
-            this.cboLessonExperience.Location = new System.Drawing.Point(144, 211);
-            this.cboLessonExperience.Name = "cboLessonExperience";
-            this.cboLessonExperience.Size = new System.Drawing.Size(200, 21);
-            this.cboLessonExperience.TabIndex = 65;
-            // 
             // newLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 324);
-            this.Controls.Add(this.cboLessonExperience);
-            this.Controls.Add(this.StudentCbo);
+            this.ClientSize = new System.Drawing.Size(362, 227);
             this.Controls.Add(this.cboNewLessonInstructor);
             this.Controls.Add(this.btnPrintReciept);
             this.Controls.Add(this.txtNewLessonTime);
@@ -256,10 +195,6 @@
             this.Controls.Add(instructionLabel);
             this.Controls.Add(timeDateLabel);
             this.Controls.Add(this.dateNewLessonDate);
-            this.Controls.Add(studentLabel);
-            this.Controls.Add(lessPriorLabel);
-            this.Controls.Add(this.txtLessonPrior);
-            this.Controls.Add(expereanceOfClassLabel);
             this.Controls.Add(kindLabel);
             this.Controls.Add(this.txtTypeOfClass);
             this.Name = "newLesson";
@@ -278,14 +213,11 @@
         private System.Windows.Forms.Button btnNewLessonSubmit;
         private System.Windows.Forms.TextBox txtNewLessonClass;
         private System.Windows.Forms.DateTimePicker dateNewLessonDate;
-        private System.Windows.Forms.TextBox txtLessonPrior;
         private System.Windows.Forms.TextBox txtTypeOfClass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNewLessonTime;
         private System.Windows.Forms.Button btnPrintReciept;
         private System.Windows.Forms.ComboBox cboNewLessonInstructor;
         private System.Windows.Forms.ComboBox cboNewLessonStudent;
-        private System.Windows.Forms.ComboBox StudentCbo;
-        private System.Windows.Forms.ComboBox cboLessonExperience;
     }
 }

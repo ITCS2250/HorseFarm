@@ -36,12 +36,6 @@ namespace HorseFarm
             form3.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void horseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new NewHorse();
@@ -66,15 +60,6 @@ namespace HorseFarm
             form.Show();
         }
 
-        private void radDisplayAll_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void showToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void instructorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new NewInstructor();
@@ -90,6 +75,12 @@ namespace HorseFarm
         private void showToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             var form = new NewShow();
+            form.Show();
+        }
+
+        private void newCampToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new NewCamp();
             form.Show();
         }
     }

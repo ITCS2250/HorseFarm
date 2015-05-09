@@ -42,6 +42,7 @@
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Horse Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // NewHorseNametxt
             // 
@@ -49,6 +50,7 @@
             this.NewHorseNametxt.Name = "NewHorseNametxt";
             this.NewHorseNametxt.Size = new System.Drawing.Size(100, 20);
             this.NewHorseNametxt.TabIndex = 1;
+            this.NewHorseNametxt.TextChanged += new System.EventHandler(this.NewHorseNametxt_TextChanged);
             // 
             // btnNewHorseSubmit
             // 
@@ -58,6 +60,7 @@
             this.btnNewHorseSubmit.TabIndex = 2;
             this.btnNewHorseSubmit.Text = "Submit";
             this.btnNewHorseSubmit.UseVisualStyleBackColor = true;
+            this.btnNewHorseSubmit.Click += new System.EventHandler(this.btnNewHorseSubmit_Click);
             // 
             // btnCancel
             // 
