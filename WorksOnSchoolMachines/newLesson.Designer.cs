@@ -43,6 +43,7 @@
             this.txtNewLessonTime = new System.Windows.Forms.TextBox();
             this.btnPrintReciept = new System.Windows.Forms.Button();
             this.cboNewLessonInstructor = new System.Windows.Forms.ComboBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             classLabel = new System.Windows.Forms.Label();
             instructionLabel = new System.Windows.Forms.Label();
             timeDateLabel = new System.Windows.Forms.Label();
@@ -168,6 +169,7 @@
             this.btnPrintReciept.TabIndex = 62;
             this.btnPrintReciept.Text = "Print Reciept";
             this.btnPrintReciept.UseVisualStyleBackColor = true;
+            this.btnPrintReciept.Click += new System.EventHandler(this.btnPrintReciept_Click);
             // 
             // cboNewLessonInstructor
             // 
@@ -176,6 +178,10 @@
             this.cboNewLessonInstructor.Name = "cboNewLessonInstructor";
             this.cboNewLessonInstructor.Size = new System.Drawing.Size(200, 21);
             this.cboNewLessonInstructor.TabIndex = 63;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage_1);
             // 
             // newLesson
             // 
@@ -219,5 +225,6 @@
         private System.Windows.Forms.Button btnPrintReciept;
         private System.Windows.Forms.ComboBox cboNewLessonInstructor;
         private System.Windows.Forms.ComboBox cboNewLessonStudent;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
